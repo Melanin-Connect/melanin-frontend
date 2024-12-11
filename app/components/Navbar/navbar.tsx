@@ -1,7 +1,8 @@
 // components/Header.tsx
 import React from 'react';
 import Image from 'next/image';
-import Logo from  '../../../public/assets/melanin.jpg'
+import Logo from  '../../../public/assets/Logo.jpg'
+import Call from "../../../public/assets/call.png"
 
 const Header: React.FC = () => {
   return (
@@ -69,20 +70,12 @@ const Header: React.FC = () => {
             href="tel:+2330000000000"
             className="bg-orange-500 text-white rounded-full px-4 py-2 flex items-center space-x-2 hover:bg-orange-600"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="h-5 w-5"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3 10a6.979 6.979 0 012.793-5.207m0 0A6.979 6.979 0 0110 3m0 0h4m0 0a6.979 6.979 0 015.207 2.793m0 0A6.979 6.979 0 0121 10m0 4a6.979 6.979 0 01-2.793 5.207m0 0A6.979 6.979 0 0114 21m-4 0H6m0 0A6.979 6.979 0 01.793 17.207m0 0A6.979 6.979 0 013 14m0-4z"
-              />
-            </svg>
+           <Image 
+            src={Call}
+            alt='call'
+            width={20}
+            height={20}
+           />
             <span>+233 000 000 0000</span>
           </a>
         </div>
