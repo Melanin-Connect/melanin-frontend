@@ -1,5 +1,6 @@
 // components/Footer.tsx
 import React from 'react';
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
@@ -104,7 +105,7 @@ const Footer: React.FC = () => {
       {/* Footer Bottom Section */}
       <div className="mt-10 border-t border-gray-700 pt-6 text-center">
         <p className="text-sm">Copyright &copy; 2024. All Rights Reserved.</p>
-        <img
+        <Image
           src="/footer-logo.png" // Replace with the path to your footer logo
           alt="Melanin Connect Logo"
           className="h-10 mx-auto mt-4"
