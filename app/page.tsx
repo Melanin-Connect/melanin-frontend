@@ -1,7 +1,11 @@
+import Hero from './components/Hero/hero';
 
-export default function Home() {
-  return <>
-  
-  
-  </>
-}
+const Home: React.FC = () => {
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
+};
+
+export default Home;
