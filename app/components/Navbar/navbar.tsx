@@ -1,6 +1,6 @@
 // components/Header.tsx
 import React from 'react';
-import Image from 'next/image';
+import Image from 'next/image';500
 import Logo from '../../../public/assets/Logo.jpg'
 import Call from "../../../public/assets/call.png"
 import Link from 'next/link';
@@ -9,7 +9,7 @@ const Header: React.FC = () => {
     <header className="bg-white shadow-md ">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center ">
+        <div className="flex items-center mt-2">
           <Image
             alt='Melanin Logo'
             src={Logo}
@@ -19,9 +19,9 @@ const Header: React.FC = () => {
 
         </div>
 
-        {/* Navigation Links */}
+       
         <nav className="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
-          <Link href="#" className="hover:text-orange-500">
+          <Link href="#" className="text-[#FE7146]">
             Home
           </Link>
           <Link href="#about" className="hover:text-orange-500">
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
           <Link href="#services" className="hover:text-orange-500">
             Services
           </Link>
-          <Link href="#team" className="hover:text-orange-500">
+          <Link href="#team" className="hover:text-orange-">
             Our Team
           </Link>
           <Link href="#faqs" className="hover:text-orange-500">
@@ -69,7 +69,8 @@ const Header: React.FC = () => {
             href="tel:+2330000000000"
             className="bg-orange-500 text-white rounded-full px-4 py-2 flex items-center space-x-2 hover:bg-orange-600"
           >
-            <Image
+            <Image 
+              className="brightness-0 invert"
               src={Call}
               alt='call'
               width={20}
