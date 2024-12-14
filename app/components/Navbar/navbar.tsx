@@ -1,6 +1,6 @@
 // components/Header.tsx
 import React from 'react';
-import Image from 'next/image';500
+import Image from 'next/image';
 import Logo from '../../../public/assets/Logo.jpg'
 import Call from "../../../public/assets/call.png"
 import Link from 'next/link';
