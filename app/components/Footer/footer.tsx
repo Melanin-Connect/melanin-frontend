@@ -3,64 +3,35 @@ import React from 'react';
 import Image from 'next/image';
 import Logo from '../../../public/assets/Logo.png'
 import Call from '../../../public/assets/call.png'
-import Email from '../../../public/assets/email.png'
-import Location from '../../../public/assets/map-marker-alt.png'
-import Facebook from '../../../public/assets/Frame (1).png'
-import Instagram from '../../../public/assets/Frame (2).png'
-import Twitter from '../../../public/assets/Frame (3).png'
-import LinkedIn from '../../../public/assets/Frame (4).png'
-import Youtube from '../../../public/assets/Frame.png'
+import Support from '../../../public/assets/support.png'
+import Clock from '../../../public/assets/clock.png'
+import Email from '../../../public/assets/envelope.png'
+import Location from '../../../public/assets/location.png'
+import Facebook from '../../../public/assets/facebook.png'
+import Instagram from '../../../public/assets/x.png'
+import Twitter from '../../../public/assets/ticktok.png'
+import LinkedIn from '../../../public/assets/pintress.png'
+import Youtube from '../../../public/assets/youtube.png'
 
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-[#303360] text-white p-10">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* Head Office Section */}
+
         <div className="ml-10 mr-10">
           <h3 className="text-lg font-bold mb-4">Head Office</h3>
-          <p className="flex items-center space-x-2">
-            <Image src={Location} alt='location' width={20} height={20} />
-            
+          <p className="flex items-center space-x-2 mb-3">
+            <Image src={Location} alt="Location Icon" width={20} height={20} />
             <span>30 Onyankle Street</span>
           </p>
-          <p className="flex items-center space-x-2 mt-2">
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={2}
-                stroke="currentColor"
-                className="h-5 w-5 text-orange-500"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M16.318 16.318a4 4 0 01-5.636 0L6.75 12.75a6 6 0 018.485-8.485l3.182 3.182a4 4 0 010 5.636l-3.182 3.182z"
-                />
-              </svg>
-            </span>
+          <p className="flex items-center space-x-2 mb-3">
+            <Image src={Email} alt="Email Icon" width={20} height={20} />
             <span>info@melaninconnect.net</span>
           </p>
-          <p className="flex items-center space-x-2 mt-2">
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={2}
-                stroke="currentColor"
-                className="h-5 w-5 text-orange-500"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 8v4l3 2m-9 2a7.978 7.978 0 001.757 3.935m12.01-12.01A8.003 8.003 0 0112 20.937"
-                />
-              </svg>
-            </span>
-            <span>Monday to Saturday: 9:00 am to 4:00 pm</span>
+          <p className="flex items-center space-x-2">
+            <Image src={Clock} alt="Clock Icon" width={20} height={20} />
+            <span>Monday to Saturday: 9.00 am to 4:00 pm</span>
           </p>
         </div>
 
@@ -90,7 +61,8 @@ const Footer: React.FC = () => {
           {/* Contact Section */}
           <div>
             <p className="text-sm">Have Any Questions?</p>
-            <h2>
+            <h2 className="flex items-center gap-2">
+              <Image src={Call} alt="Phone Icon" width={20} height={20} />
               <a href="tel:+233541386626" className="text-lg text-orange-500 font-bold hover:text-orange-600">
                 +233 541 386 626
               </a>
@@ -100,7 +72,8 @@ const Footer: React.FC = () => {
           {/* Email Section */}
           <div>
             <p className="text-sm">Send us an email</p>
-            <h2>
+            <h2 className="flex items-center gap-2">
+              <Image src={Support} alt="Support Icon" width={20} height={20} />
               <a href="mailto:info@melaninconnect.net" className="text-lg text-orange-500 font-bold hover:text-orange-600">
                 info@melaninconnect.net
               </a>
@@ -133,16 +106,16 @@ const Footer: React.FC = () => {
 
       <div className="container mx-auto border-t border-gray-700 mt-10 pt-6">
         <div className="grid grid-cols-3 items-center justify-center gap-4">
-          
-        <div className="text-center">
+
+          <div className="text-center">
             <p className="text-sm text-gray-300">
               &copy; {new Date().getFullYear()} Melanin Connect. All Rights Reserved.
             </p>
           </div>
-         
-          
+
+
           <div className="flex justify-center">
-            <Image 
+            <Image
               alt='Melanin Connect Logo'
               src={Logo}
               width={150}
@@ -155,8 +128,8 @@ const Footer: React.FC = () => {
               Privacy Policy | Terms of Service
             </p>
           </div>
-          
-          
+
+
         </div>
       </div>
     </footer>
