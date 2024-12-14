@@ -1,48 +1,47 @@
 // components/Header.tsx
 import React from 'react';
 import Image from 'next/image';
-import Logo from  '../../../public/assets/Logo.jpg'
+import Logo from '../../../public/assets/Logo.jpg'
 import Call from "../../../public/assets/call.png"
-
+import Link from 'next/link';
 const Header: React.FC = () => {
   return (
     <header className="bg-white shadow-md ">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <div className="bg-beige p-2 rounded">
-            <Image
+        <div className="flex items-center -mt-10">
+          <Image
             alt='Melanin Logo'
             src={Logo}
             width={200}
             height={200}
-            />
-          </div>
+          />
+
         </div>
 
         {/* Navigation Links */}
         <nav className="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
-          <a href="#" className="hover:text-orange-500">
+          <Link href="#" className="hover:text-orange-500">
             Home
-          </a>
-          <a href="#about" className="hover:text-orange-500">
+          </Link>
+          <Link href="#about" className="hover:text-orange-500">
             About Us
-          </a>
-          <a href="#services" className="hover:text-orange-500">
+          </Link>
+          <Link href="#services" className="hover:text-orange-500">
             Services
-          </a>
-          <a href="#team" className="hover:text-orange-500">
+          </Link>
+          <Link href="#team" className="hover:text-orange-500">
             Our Team
-          </a>
-          <a href="#faqs" className="hover:text-orange-500">
+          </Link>
+          <Link href="#faqs" className="hover:text-orange-500">
             FAQs
-          </a>
-          <a href="#blog" className="hover:text-orange-500">
+          </Link>
+          <Link href="#blog" className="hover:text-orange-500">
             Blog
-          </a>
-          <a href="#contact" className="hover:text-orange-500">
+          </Link>
+          <Link href="#contact" className="hover:text-orange-500">
             Contact
-          </a>
+          </Link>
         </nav>
 
         {/* Search and Contact */}
@@ -66,18 +65,18 @@ const Header: React.FC = () => {
           </div>
 
           {/* Phone Button */}
-          <a
+          <Link
             href="tel:+2330000000000"
             className="bg-orange-500 text-white rounded-full px-4 py-2 flex items-center space-x-2 hover:bg-orange-600"
           >
-           <Image 
-            src={Call}
-            alt='call'
-            width={20}
-            height={20}
-           />
+            <Image
+              src={Call}
+              alt='call'
+              width={20}
+              height={20}
+            />
             <span>+233 000 000 0000</span>
-          </a>
+            </Link>
         </div>
       </div>
     </header>
