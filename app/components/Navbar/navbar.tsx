@@ -9,7 +9,7 @@ const Header: React.FC = () => {
     <header className="bg-white shadow-md ">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center -mt-10">
+        <div className="flex items-center ">
           <Image
             alt='Melanin Logo'
             src={Logo}
