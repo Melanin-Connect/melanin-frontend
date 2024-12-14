@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Logo from '../../../public/assets/Logo.png'
 import Call from '../../../public/assets/call.png'
 import Email from '../../../public/assets/email.png'
-import Location from '../../../public/assets/location.png'
+import Location from '../../../public/assets/map-marker-alt.png'
 import Facebook from '../../../public/assets/Frame (1).png'
 import Instagram from '../../../public/assets/Frame (2).png'
 import Twitter from '../../../public/assets/Frame (3).png'
@@ -20,22 +20,8 @@ const Footer: React.FC = () => {
         <div className="ml-10 mr-10">
           <h3 className="text-lg font-bold mb-4">Head Office</h3>
           <p className="flex items-center space-x-2">
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={2}
-                stroke="currentColor"
-                className="h-5 w-5 text-orange-500"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.657 16.657L13 21l-4.657-4.343C6.929 15.657 5.778 14.637 5.778 12.778a6.778 6.778 0 1113.556 0c0 1.859-1.151 2.88-1.677 3.879z"
-                />
-              </svg>
-            </span>
+            <Image src={Location} alt='location' width={20} height={20} />
+            
             <span>30 Onyankle Street</span>
           </p>
           <p className="flex items-center space-x-2 mt-2">
