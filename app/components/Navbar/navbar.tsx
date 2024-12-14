@@ -1,25 +1,25 @@
 // components/Header.tsx
 import React from 'react';
 import Image from 'next/image';
-import Logo from '../../../public/assets/Logo.jpg'
-import Call from "../../../public/assets/call.png"
+import Logo from '@/public/assets/Logo.jpg'
+import Call from "@/public/assets/call.png"
 import Link from 'next/link';
 const Header: React.FC = () => {
   return (
     <header className="bg-white shadow-md ">
       <div className="container mx-auto flex items-center justify-between">
-        {/* Logo */}
-        <div className="flex items-center mt-2">
+       
+        <div className="cursor-pointer flex items-center mt-2">
+          <Link href="#">
           <Image
             alt='Melanin Logo'
             src={Logo}
             width={200}
             height={200}
           />
+          </Link>
 
         </div>
-
-       
         <nav className="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
           <Link href="#" className="text-[#FE7146]">
             Home
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
           <Link href="#services" className="hover:text-orange-500">
             Services
           </Link>
-          <Link href="#team" className="hover:text-orange-">
+          <Link href="#team" className="hover:text-orange-500">
             Our Team
           </Link>
           <Link href="#faqs" className="hover:text-orange-500">
@@ -43,10 +43,8 @@ const Header: React.FC = () => {
             Contact
           </Link>
         </nav>
-
-        {/* Search and Contact */}
-        <div className="flex items-center mr-4 space-x-4">
-          {/* Search Icon */}
+        <div className=" flex items-center mr-4 space-x-4">
+         
           <div className="hidden md:block bg-orange-100 rounded-full p-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
