@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
               &copy; {new Date().getFullYear()} Melanin Connect. All Rights Reserved.
             </p>
           </div>
-          <div className=" md:items-center md:items-center md:justify-center md:ml-20 max-auto items-start justify-start sm:flex-col-1">
+          <div className=" md:items-center  md:justify-center md:ml-20 max-auto items-start justify-start sm:flex-col-1">
             <Link href="#">
               <Image
                 className="brightness-0 invert"
