@@ -2,22 +2,19 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Search from '../../../public/assets/search.png';
-import Call from '../../../public/assets/call.png';
-import Close from '../../../public/assets/close.png';
+import Search from '@/public/assets/search.png';
+import Call from '@/public/assets/call.png';
+
 
 interface MobileMenuProps {
   isOpen: boolean;  
   toggleMenu: () => void;
 }
 
-const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
+const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen }) => {
   const [searchQuery, setSearchQuery] = useState('');
 
-  const handleSearch = () => {
-    // Implement the search functionality here
-    console.log('Search query:', searchQuery);
-  };
+
 
   if (!isOpen) return null;
 
