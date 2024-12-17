@@ -2,12 +2,12 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '@/public/assets/Logo.jpg';
-import Call from '@/public/assets/call.png';
-import Menu from '@/public/assets/Menu.png';
+import Logo from '../../../public/assets/Logo.jpg'; 
+import Call from '../../../public/assets/call.png';
+import Menu from '../../../public/assets/Menu.png';
 import MobileMenu from './Mobile';
-import Close from '@/public/assets/close.png'
-import Search from '@/public/assets/search.png'
+import Close from '../../../public/assets/close.png'
+import Search from '../../../public/assets/search.png'
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +28,7 @@ const Header: React.FC = () => {
           </div>
 
           {/* Navigation Links */}
-          <nav className="hidden sm:flex sm:text-xs md:text-sm lg:text-base space-x-2 md:space-x-4 lg:space-x-6 font-medium text-gray-700">
+          <nav className="hidden md:flex sm:flex sm:text-sm md:text-sm lg:text-base space-x-4 lg:space-x-6 font-medium text-gray-700">
             <Link href="/" className="text-[#FE7146]">
               Home
             </Link>
@@ -53,16 +53,16 @@ const Header: React.FC = () => {
           </nav>
 
           {/* Call Button and Search Icon */}
-          <div className="flex items-center space-x-1 md:space-x-2 lg:space-x-4">
+          <div className="flex items-center space-x-2 lg:space-x-4">
             {/* Search Icon */}
-            <div className="hidden md:block bg-orange-100 rounded-full p-2">
+              <div className="hidden md:block bg-orange-100 rounded-full p-2">
               <Image src={Search} alt="search" width={20} height={20} className="mr-2 ml-2" />  
             </div>
 
             {/* Phone Button */}
             <Link
               href="tel:+2330000000000"
-              className="hidden md:flex bg-orange-500 text-white text-xs md:text-sm rounded-full px-2 md:px-3 lg:px-4 py-1 md:py-2 items-center space-x-1 lg:space-x-2 hover:bg-orange-600 transition"
+              className="hidden md:flex bg-orange-500 text-white sm:text-[2] md:text-sm  rounded-full px-3 lg:px-4 py-2 items-center space-x-1 lg:space-x-2 hover:bg-orange-600 transition text-sm lg:text-base"
             >
               <Image
                 className="brightness-0 invert lg:w-[20px] lg:h-[20px]"
