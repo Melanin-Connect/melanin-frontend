@@ -1,11 +1,11 @@
 'use client';
 import React, { useState } from 'react';
+import MobileMenu from './Mobile';
 import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '../../../public/assets/Logo.jpg'; 
 import Call from '../../../public/assets/call.png';
 import Menu from '../../../public/assets/Menu.png';
-import MobileMenu from './Mobile';
 import Close from '../../../public/assets/close.png'
 import Search from '../../../public/assets/search.png'
 

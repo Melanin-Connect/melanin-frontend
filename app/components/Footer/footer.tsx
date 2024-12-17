@@ -40,6 +40,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* About Section */}
+          
           <div className="space-y-4">
             <h3 className="text-xl font-bold">About</h3>
             <ul className="space-y-2">
