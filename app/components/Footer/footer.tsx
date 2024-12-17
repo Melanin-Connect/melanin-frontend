@@ -2,17 +2,17 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '../assets/Logo.jpg';
-import Call from '../assets/call.png';
-import Support from '../assets/support.png';
-import Clock from '../assets/clock.png';
-import Email from '../assets/envelope.png';
-import Location from '../assets/location.png';
-import Facebook from '../assets/facebook.png';
-import Instagram from '../assets/x.png';
-import Twitter from '../assets/ticktok.png';
-import LinkedIn from '../assets/pintress.png';
-import Youtube from '../assets/youtube.png';
+import Logo from '../../../public/assets/Logo.png';
+import Call from '../../../public/assets/call.png';
+import Support from '../../../public/assets/support.png';
+import Clock from '../../../public/assets/clock.png';
+import Email from '../../../public/assets/envelope.png';
+import Location from '../../../public/assets/location.png';
+import Facebook from '../../../public/assets/facebook.png';
+import Instagram from '../../../public/assets/x.png';
+import Twitter from '../../../public/assets/ticktok.png';
+import LinkedIn from '../../../public/assets/pintress.png';
+import Youtube from '../../../public/assets/youtube.png';
 
 const Footer: React.FC = () => {
   return (
