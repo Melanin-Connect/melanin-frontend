@@ -2,8 +2,8 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import Search from '../../../public/assets/search.png';
-import Call from '../../../public/assets/call.png';
+import Search from '@/public/assets/search.png';
+import Call from '@/public/assets/call.png';
 
 
 interface MobileMenuProps {
