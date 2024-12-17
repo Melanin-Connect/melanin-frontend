@@ -24,7 +24,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen }) => {
             <input
               type="text"
               placeholder="Search..."
-              className="bg-transparent w-full outline-none"
+              className="bg-transparent w-full  text-black outline-none"
 
             />
             
