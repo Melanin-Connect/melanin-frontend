@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   // Required for Docker builds
   experimental: {
-    outputFileTracingRoot: undefined,
+    outputFileTracingRoot: 'C:/Users/HP/Desktop/Melanin/melanin-frontend',
   },
 };
 
