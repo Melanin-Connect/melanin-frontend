@@ -8,10 +8,10 @@ import Call from '@/public/assets/call.png';
 
 interface MobileMenuProps {
   isOpen: boolean;  
-  toggleMenu: () => void;
+  ToggleMenu: () => void;
 }
 
-const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen }) => {
+const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen , ToggleMenu}) => {
 
 
   if (!isOpen) return null;

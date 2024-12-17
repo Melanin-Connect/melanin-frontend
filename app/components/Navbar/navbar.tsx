@@ -93,7 +93,7 @@ const Header: React.FC = () => {
       </div>
 
       {/* Mobile Menu */}
-      <MobileMenu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
+      <MobileMenu isOpen={isMenuOpen} ToggleMenu={toggleMenu} />
     </header>
   );
 };

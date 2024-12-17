@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   // Required for Docker builds
   experimental: {
-    outputFileTracingRoot: undefined,
+    
   },
 };
 
