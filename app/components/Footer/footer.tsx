@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '../../../public/assets/Logo.png';
+import Logo from '../../../public/assets/melanin.png';
 import Call from '../../../public/assets/call.png';
 import Support from '../../../public/assets/support.png';
 import Clock from '../../../public/assets/clock.png';
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* About Section */}
-          
+
           <div className="space-y-4">
             <h3 className="text-xl font-bold">About</h3>
             <ul className="space-y-2">
