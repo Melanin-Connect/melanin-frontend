@@ -2,11 +2,11 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '@/public/assets/Logo.jpg'; 
-import Call from '@/public/assets/call.png';
-import Menu from '@/public/assets/Menu.png';
-import Close from '@/public/assets/close.png';
-import Search from '@/public/assets/search.png';
+import Logo from '@/public/Logo.jpg'; 
+import Call from '@/public/call.png';
+import Menu from '@/public/Menu.png';
+import Close from '@/public/close.png';
+import Search from '@/public/search.png';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
