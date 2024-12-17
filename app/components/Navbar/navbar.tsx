@@ -1,83 +1,99 @@
-// components/Header.tsx
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import Image from 'next/image';
-import Logo from '@/public/assets/Logo.jpg'
-import Call from "@/public/assets/call.png"
 import Link from 'next/link';
-const Header: React.FC = () => {
-  return (
-    <header className="bg-white shadow-md ">
-      <div className="container mx-auto flex items-center justify-between">
-       
-        <div className="cursor-pointer flex items-center mt-2">
-          <Link href="#">
-          <Image
-            alt='Melanin Logo'
-            src={Logo}
-            width={200}
-            height={200}
-          />
-          </Link>
+import Logo from '@/public/assets/Logo.jpg';
+import Call from '@/public/assets/call.png';
+import Menu from '@/public/assets/Menu.png';
+import MobileMenu from './Mobile';
+import Close from '@/public/assets/close.png'
+import Search from '@/public/assets/search.png'
 
-        </div>
-        <nav className="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
-          <Link href="#" className="text-[#FE7146]">
-            Home
-          </Link>
-          <Link href="#about" className="hover:text-orange-500">
-            About Us
-          </Link>
-          <Link href="#services" className="hover:text-orange-500">
-            Services
-          </Link>
-          <Link href="#team" className="hover:text-orange-500">
-            Our Team
-          </Link>
-          <Link href="#faqs" className="hover:text-orange-500">
-            FAQs
-          </Link>
-          <Link href="#blog" className="hover:text-orange-500">
-            Blog
-          </Link>
-          <Link href="#contact" className="hover:text-orange-500">
-            Contact
-          </Link>
-        </nav>
-        <div className=" flex items-center mr-4 space-x-4">
-         
-          <div className="hidden md:block bg-orange-100 rounded-full p-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="h-5 w-5 text-orange-500"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M21 21l-4.35-4.35M9.5 17a7.5 7.5 0 100-15 7.5 7.5 0 000 15z"
-              />
-            </svg>
+const Header: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <header className="bg-white shadow-md sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container flex items-center justify-between p-4">
+          {/* Logo Section */}
+          <div className="cursor-pointer flex items-start">
+            <Link href="/">
+              <Image alt="Melanin Logo" src={Logo} width={120} height={120} />
+            </Link>
           </div>
 
-          {/* Phone Button */}
-          <Link
-            href="tel:+2330000000000"
-            className="bg-orange-500 text-white rounded-full px-4 py-2 flex items-center space-x-2 hover:bg-orange-600"
-          >
-            <Image 
-              className="brightness-0 invert"
-              src={Call}
-              alt='call'
-              width={20}
-              height={20}
-            />
-            <span>+233 000 000 0000</span>
+          {/* Navigation Links */}
+          <nav className="hidden sm:flex sm:text-xs md:text-sm lg:text-base space-x-2 md:space-x-4 lg:space-x-6 font-medium text-gray-700">
+            <Link href="/" className="text-[#FE7146]">
+              Home
             </Link>
+            <Link href="#about" className="hover:text-orange-500 transition">
+              About Us
+            </Link>
+            <Link href="#services" className="hover:text-orange-500 transition">
+              Services
+            </Link>
+            <Link href="#team" className="hover:text-orange-500 transition">
+              Our Team
+            </Link>
+            <Link href="#faqs" className="hover:text-orange-500 transition">
+              FAQs
+            </Link>
+            <Link href="#blog" className="hover:text-orange-500 transition">
+              Blog
+            </Link>
+            <Link href="#contact" className="hover:text-orange-500 transition">
+              Contact
+            </Link>
+          </nav>
+
+          {/* Call Button and Search Icon */}
+          <div className="flex items-center space-x-1 md:space-x-2 lg:space-x-4">
+            {/* Search Icon */}
+            <div className="hidden md:block bg-orange-100 rounded-full p-2">
+              <Image src={Search} alt="search" width={20} height={20} className="mr-2 ml-2" />  
+            </div>
+
+            {/* Phone Button */}
+            <Link
+              href="tel:+2330000000000"
+              className="hidden md:flex bg-orange-500 text-white text-xs md:text-sm rounded-full px-2 md:px-3 lg:px-4 py-1 md:py-2 items-center space-x-1 lg:space-x-2 hover:bg-orange-600 transition"
+            >
+              <Image
+                className="brightness-0 invert lg:w-[20px] lg:h-[20px]"
+                src={Call}
+                alt="call"
+                width={16}
+                height={16}
+              />
+              <span>+233 000 000 0000</span>
+            </Link>
+
+            {/* Mobile Menu Button */}
+            <button onClick={toggleMenu} className="md:hidden focus:outline-none">
+              {isMenuOpen ? (
+                <Image 
+                  src={Close} 
+                  alt="Close" 
+                  width={40} 
+                  height={40} 
+                  style={{ filter: 'invert(50%) sepia(100%) saturate(5000%) hue-rotate(360deg) brightness(90%) contrast(100%)' }} 
+                />
+              ) : (
+                <Image src={Menu} alt="Menu" width={24} height={24} />
+              )}
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      <MobileMenu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
     </header>
   );
 };
