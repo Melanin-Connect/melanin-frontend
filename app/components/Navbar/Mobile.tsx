@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import Search from '@/public/assets/search.png';
@@ -12,8 +12,6 @@ interface MobileMenuProps {
 }
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen }) => {
-  const [searchQuery, setSearchQuery] = useState('');
-
 
 
   if (!isOpen) return null;
@@ -28,11 +26,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen }) => {
               type="text"
               placeholder="Search..."
               className="bg-transparent w-full outline-none"
-              value={searchQuery}
-              onChange={(e) => {
-                setSearchQuery(e.target.value);
-                console.log('Current search query:', e.target.value);
-              }}
+
             />
             
           </div>
