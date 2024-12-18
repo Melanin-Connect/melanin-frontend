@@ -23,7 +23,7 @@ const Header: React.FC = () => {
           {/* Logo Section */}
           <div className="cursor-pointer flex items-start">
             <Link href="/">
-              <Image alt="Melanin Logo" src={Logo} width={120} height={120} />
+              <Image alt="Melanin Logo" src={Logo} width={200} height={160} />
             </Link>
           </div>
 
