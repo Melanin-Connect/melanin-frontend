@@ -20,7 +20,7 @@ const HeroSection = () => {
                             alt="Background Shape"
                             className="absolute inset-0 top-[450px] left-[300px] hidden lg:block"
                         />
-                        <h1 className="relative text-[#000] text-[16px] lg:text-[65px] font-bold lg:leading-[70px] leading-[25px] lg:mb-4 mb-2 font-epilogue">
+                        <h1 className="relative text-[#000] text-[20px] lg:text-[65px] font-bold lg:leading-[70px] leading-[30px] lg:mb-4 mb-2 font-epilogue">
                             Empowering Your Business With AI and Blockchain Solutions
                         </h1>
                         <p className="flex flex-col justify-center flex-shrink-0 text-[#444] font-epilogue lg:text-[18px] text-[16px] font-medium lg:leading-[30px] leading-[20px] mb-6 max-w-full">
