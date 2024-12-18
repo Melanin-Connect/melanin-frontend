@@ -20,7 +20,7 @@ const HeroSection = () => {
                             alt="Background Shape"
                             className="absolute inset-0 top-[450px] left-[300px] hidden lg:block"
                         />
-                        <h1 className="relative text-[#000] text-[24px] lg:text-[65px] font-bold lg:leading-[70px] leading-[30px] lg:mb-4 mb-2 font-epilogue">
+                        <h1 className="relative text-[#000] text-[20px] lg:text-[65px] font-bold lg:leading-[70px] leading-[30px] lg:mb-4 mb-2 font-epilogue">
                             Empowering Your Business With AI and Blockchain Solutions
                         </h1>
                         <p className="flex flex-col justify-center flex-shrink-0 text-[#444] font-epilogue lg:text-[18px] text-[14px] font-medium lg:leading-[30px] leading-[20px] mb-6 max-w-full">
@@ -30,7 +30,7 @@ const HeroSection = () => {
                             <button className="bg-[#FE7146] text-white text-[14px] lg:text-base py-1 lg:py-3 px-4 lg:px-14 rounded-full hover:bg-orange-600 transition w-3/4 sm:w-auto whitespace-nowrap">
                                 Register Now
                             </button>
-                            <Link href="/about" className="text-black py-3 text-sm lg:text-base px-6 font-bold">
+                            <Link href="/about" className="text-black  py-1 lg:py-3 text-sm lg:text-base px-6 font-bold whitespace-nowrap">
                                 Learn More <strong>→</strong>
                             </Link>
                         </div>
