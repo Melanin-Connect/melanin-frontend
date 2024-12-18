@@ -70,8 +70,8 @@ const HeroSection = () => {
                                 />
                                 <Image
                                     src={heroIcon}
-                                    width={800}
-                                    height={700}
+                                    width={700}
+                                    height={800}
                                     alt="Hero"
                                     className="absolute right-36"
                                 />
