@@ -9,8 +9,8 @@ import Gradient from "@/public/assets/gradient.png";
 
 const HeroSection = () => {
     return (
-        <section className="relative bg-white overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <section className="relative bg-white overflow-hidden ">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 ">
                 <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center">
                     <div className="lg:w-1/2 text-center lg:text-left relative">
                         <Image
@@ -18,7 +18,7 @@ const HeroSection = () => {
                             height={100}
                             src={herShape}
                             alt="Background Shape"
-                            className="absolute inset-0 top-[450px] left-[300px] hidden lg:block"
+                            className="absolute inset-0 top-[400px] left-[300px] hidden lg:block"
                         />
                         <h1 className="relative text-[#000] text-[20px] lg:text-[65px] font-bold lg:leading-[70px] leading-[30px] lg:mb-4 mb-2 font-epilogue">
                             Empowering Your Business With AI and Blockchain Solutions

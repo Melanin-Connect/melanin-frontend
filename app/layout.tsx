@@ -18,11 +18,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;400;700&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className="antialiased">
+      <body className="antialiased" style={{ fontFamily: 'Epilogue, sans-serif' }}>
         <Navbar />
         {children}
         <Footer />
