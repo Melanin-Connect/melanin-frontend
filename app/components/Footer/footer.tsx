@@ -2,17 +2,17 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '../../../public/assets/melanin.png';
-import Call from '../../../public/assets/call.png';
-import Support from '../../../public/assets/support.png';
-import Clock from '../../../public/assets/clock.png';
-import Email from '../../../public/assets/envelope.png';
-import Location from '../../../public/assets/location.png';
-import Facebook from '../../../public/assets/facebook.png';
-import Instagram from '../../../public/assets/x.png';
-import Twitter from '../../../public/assets/ticktok.png';
-import LinkedIn from '../../../public/assets/pintress.png';
-import Youtube from '../../../public/assets/youtube.png';
+import Logo from '@/public/assets/melanin.png';
+import Call from '@/public/assets/call.png';
+import Support from '@/public/assets/support.png';
+import Clock from '@/public/assets/clock.png';
+import Email from '@/public/assets/envelope.png';
+import Location from '@/public/assets/location.png';
+import Facebook from '@/public/assets/facebook.png';
+import Instagram from '@/public/assets/x.png';
+import Twitter from '@/public/assets/ticktok.png';
+import LinkedIn from '@/public/assets/pintress.png';
+import Youtube from '@/public/assets/youtube.png';
 
 const Footer: React.FC = () => {
   return (

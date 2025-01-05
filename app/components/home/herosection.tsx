@@ -1,11 +1,11 @@
 // components/HeroSection.tsx
 import Image from "next/image";
 import Link from "next/link";
-import heroPhone from "../../../public/assets/hero-mobil.png";
-import heroIcon from "../../../public/assets/hero-icon.png";
-import herShape from "../../../public/assets/hero-shaps.png";
-import Images from "../../../public/assets/imgs.png";
-import Gradient from "../../../public/assets/gradient.png";
+import heroPhone from "@/public/assets/hero-mobil.png";
+import heroIcon from "@/public/assets/hero-icon.png";
+import herShape from "@/public/assets/hero-shaps.png";
+import Images from "@/public/assets/imgs.png";
+import Gradient from "@/public/assets/gradient.png";
 
 const HeroSection = () => {
     return (
