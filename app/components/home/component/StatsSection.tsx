@@ -8,6 +8,8 @@ import sign from "@/public/assets/sign.png";
 import heading from "@/public/assets/heading.png";
 import SVG3 from "@/public/assets/Group.png"
 import Buttet from "@/public/assets/bullet.png"
+import Video from "@/public/assets/video-1.jpg.png";
+import play from "@/public/assets/Background.png"
 
 const StatsSection: React.FC = () => {
   return (
@@ -99,6 +101,29 @@ const StatsSection: React.FC = () => {
 
 
 
+      </div>
+      <div className="flex justify-center mt-20">
+        <div className="w-[901px] h-[400px] rounded-2xl relative" style={{
+          background: "linear-gradient(135deg, #FF764A, #FF4A68)",
+          zIndex: 1
+        }}>
+           {/* <div className="flex justify-center mt-14 rounded-lg absolute top-0 left-0 w-full h-full">
+            <video className="w-[1201px] h-[433px] rounded-lg" style={{
+              background: "linear-gradient(135deg, #FF764A, #FF4A68)"
+            }} controls>
+              <source src="path/to/your/video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+             <Image src={Video} width={1201} height={350} alt="CEO" className="mr-2" />
+          </div> */}
+         
+          <div className="flex justify-center mt-2 rounded-lg absolute top-0 left-0 w-[1201] h-[350] items-center">
+            <Image src={Video} width={1201} height={350} alt="Professional Video" className="rounded-lg shadow-lg" />
+            <div className="absolute flex items-center justify-center">
+                <Image src={play} width={50} height={50} alt="Play Button" className="rounded-lg shadow-lg" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
