@@ -18,7 +18,7 @@ const StatsSection: React.FC = () => {
       <div className="text-center mb-12">
         <Image src={heading} width={40} height={78} alt="Heading Icon" className="mx-auto" />
         <h1 className="text-orange-500 text-sm font-bold uppercase">
-          YOU'VE GOT BUSINESS, WE'VE GOT BRILLIANT MINDS
+          YOU&apos;VE GOT BUSINESS, WE&apos;VE GOT BRILLIANT MINDS
         </h1>
         <p className="mt-4 w-[924] text-gray-800 font-semibold text-[30] md:text-[24] lg:text-[30] font-epilogue">
           At Melanin Connect, we transform bold business ideas into exceptional digital solutions. 
