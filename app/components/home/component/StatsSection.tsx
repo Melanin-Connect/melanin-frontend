@@ -64,7 +64,8 @@ const StatsSection: React.FC = () => {
         </div>
 
         <div className="w-full ml-5 md:w-1/2 mt-4 md:mt-0 flex gap-6">
-  {/* First Column */}
+  
+  <div className="flex flex-col-2 w-[170] gap-4 h-[119]">
   <div className="flex flex-col gap-4 transform pt-10">
     {[
       { img: SVG2, value: "280k", label: "Projects Launched" },
@@ -97,6 +98,9 @@ const StatsSection: React.FC = () => {
       </div>
     ))}
   </div>
+
+  </div>
+  
 </div>
 
 
