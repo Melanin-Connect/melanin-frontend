@@ -17,8 +17,8 @@ const BusinessServices: React.FC = () => {
         </h3>
       </div>
 
-      <div className="flex flex-col lg:flex-row mt-12 lg:items-center lg:justify-center rounded-3xl bg-gradient-to-t from-[#6269C6] to-[#303360] p-5 lg:bg-gradient-to-t lg:from-[#6269C6] lg:to-[#303360] bg-transparent">
-        <div className="space-y-4 p-10 mb-10 lg:w-[400px] lg:h-[500px] rounded-3xl lg:bg-white">
+      <div className="flex flex-col lg:flex-row mt-12 lg:items-center lg:justify-center rounded-3xl hidden:bg-gradient-to-t from-[#6269C6] to-[#303360] p-5 lg:bg-gradient-to-t lg:from-[#6269C6] lg:to-[#303360] bg-transparent">
+        <div className="space-y-4  md:p-10 lg:p-10 mb-10 lg:w-[400px] lg:h-[500px] rounded-3xl lg:bg-white">
           <div className="rounded-lg  lg:overflow-hidden">
             <div className="bg-orange-500 rounded-lg text-white p-2 text-lg font-semibold">
               01. AI-Powered Virtual Assistants & Chatbots
@@ -50,10 +50,10 @@ const BusinessServices: React.FC = () => {
           <h4 className="text-orange-500 text-sm uppercase font-semibold">
             Creative Solutions
           </h4>
-          <h5 className="text-2xl font-bold text-white mt-4">
+          <h5 className="text-2xl font-bold lg:text-white text-black mt-4">
             AI-Powered Virtual Assistants & Chatbots
           </h5>
-          <p className="text-white text-sm mt-4">
+          <p className="lg:text-white text-black text-sm mt-4">
             Our intelligent virtual assistants and chatbots provide real-time,
             AI-driven customer support, personalized product recommendations,
             and intuitive interactions that help you engage your customers
@@ -64,7 +64,7 @@ const BusinessServices: React.FC = () => {
             Learn More →
           </button>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center hidden lg:flex">
           <Image
             src={Business}
             alt="business service"

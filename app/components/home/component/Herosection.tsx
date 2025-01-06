@@ -39,14 +39,14 @@ const HeroSection = () => {
                             <span className="ml-2 text-gray-600">4.8/5 Rating</span>
                         </div>
                     </div>
-                    <div className="lg:w-1/2 mt-4 lg:mt-0 relative">
-                        <div className="absolute inset-1 -top-20 -right-20 hidden lg:block">
+                    <div className="lg:w-1/2 mt-40 lg:mt-0 relative">
+                        <div className="absolute inset-1 -top-20 -right-20 hidden lg:block  justify-center">
                             <Image
                                 src={Gradient}
                                 alt="hero"
                                 width={900}
                                 height={563.16}
-                                className="flex-shrink-0"
+                                className="flex-shrink-0 mt-36 w-full h-auto lg:mt-0"
                             />
                             <div className="absolute px-10 bottom-[-50px] left-20 bg-white p-4 rounded-full shadow-lg shadow-orange-500/20 flex items-center">
                                 <Image
