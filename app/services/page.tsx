@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Breadcrumb from "../components/common/Breadcrumb";
+
 
 const page = () => {
   return (
-    <div>services page</div>
-  )
-}
+    <div>
+      <Breadcrumb title="AI-Powered Virtual Assistants & Chatbots" />
+    </div>
+  );
+};
 
-export default page
+export default page;

@@ -9,13 +9,13 @@ import fiba from "@/public/logos/Vector.png"
 import Image from "next/image";
 
 const logos = [
-  { src: forbs, alt: "Forbes" },
-  { src: gosport, alt: "Go Sport" },
-  { src: sodicam, alt: "Sodicam" },
-  { src: daignostics, alt: "Diagnostics" },
-  { src: itv, alt: "ITV" },
-  { src: nrik, alt: "Nrik" },
-  { src: fiba, alt: "FIBA" },
+  { src: forbs, alt: "Forbes", width: 144, height: 80 },
+  { src: gosport, alt: "Go Sport", width: 144, height: 80 },
+  { src: sodicam, alt: "Sodicam", width: 144, height: 80 },
+  { src: daignostics, alt: "Diagnostics", width: 144, height: 80 },
+  { src: itv, alt: "ITV", width: 144, height: 80 },
+  { src: nrik, alt: "Nrik", width: 144, height: 80 },
+  { src: fiba, alt: "FIBA", width: 144, height: 80 },
 ];
 
 const LogoSection: React.FC = () => {
@@ -31,8 +31,8 @@ const LogoSection: React.FC = () => {
               <Image
                 src={typeof logo.src === 'string' ? logo.src : logo.src.src}
                 alt={logo.alt}
-                width={144}
-                height={80}
+                width={logo.width}
+                height={logo.height}
                 className="max-w-full max-h-full object-contain"
               />
             </div>

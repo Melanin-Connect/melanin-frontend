@@ -32,22 +32,22 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen }) => {
           <Link href="/" className="text-gray-700 hover:text-orange-500 transition">
             Home
           </Link>
-          <Link href="#about" className="text-gray-700 hover:text-orange-500 transition">
+          <Link href="/about" className="text-gray-700 hover:text-orange-500 transition">
             About Us
           </Link>
-          <Link href="#services" className="text-gray-700 hover:text-orange-500 transition">
+          <Link href="/services" className="text-gray-700 hover:text-orange-500 transition">
             Services
           </Link>
-          <Link href="#team" className="text-gray-700 hover:text-orange-500 transition">
+          <Link href="/team" className="text-gray-700 hover:text-orange-500 transition">
             Our Team
           </Link>
-          <Link href="#faqs" className="text-gray-700 hover:text-orange-500 transition">
+          <Link href="/faqs" className="text-gray-700 hover:text-orange-500 transition">
             FAQs
           </Link>
-          <Link href="#blog" className="text-gray-700 hover:text-orange-500 transition">
+          <Link href="/blog" className="text-gray-700 hover:text-orange-500 transition">
             Blog
           </Link>
-          <Link href="#contact" className="text-gray-700 hover:text-orange-500 transition">
+          <Link href="/contact" className="text-gray-700 hover:text-orange-500 transition">
             Contact
           </Link>
           <Link

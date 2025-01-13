@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Breadcrumb from "../components/common/Breadcrumb";
 
-const Contact = () => {
+
+const page = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <div>
+      <Breadcrumb title="contact" />
+    
+    </div>
+  );
+};
 
-export default Contact
+export default page;

@@ -9,6 +9,7 @@ import Menu from '@/public/assets/Menu.png';
 import Close from '@/public/assets/close.png'
 import Search from '@/public/assets/search.png'
 
+
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -32,22 +33,22 @@ const Header: React.FC = () => {
             <Link href="/" className="text-[#FE7146]">
               Home
             </Link>
-            <Link href="#about" className="hover:text-orange-500 transition">
+            <Link href="/about" className="hover:text-orange-500 transition">
               About Us
             </Link>
-            <Link href="#services" className="hover:text-orange-500 transition">
+            <Link href="/services" className="hover:text-orange-500 transition">
               Services
             </Link>
-            <Link href="#team" className="hover:text-orange-500 transition">
+            <Link href="/team" className="hover:text-orange-500 transition">
               Our Team
             </Link>
-            <Link href="#faqs" className="hover:text-orange-500 transition">
+            <Link href="/faqs" className="hover:text-orange-500 transition">
               FAQs
             </Link>
-            <Link href="#blog" className="hover:text-orange-500 transition">
+            <Link href="/blog" className="hover:text-orange-500 transition">
               Blog
             </Link>
-            <Link href="#contact" className="hover:text-orange-500 transition">
+            <Link href="/contact" className="hover:text-orange-500 transition">
               Contact
             </Link>
           </nav>
