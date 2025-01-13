@@ -68,12 +68,15 @@ const ReviewSection: React.FC = () => {
             <p className="text-2xl text-black font-bold ">Thomas Walimes</p>
             <p className="text-sm font-medium">Marketing Manager</p>
             <div className="flex pt-5 space-x-1">
-            {Array.from({ length: 5 }, (_, index) => (
-             <Image
-             src={Symbol} 
-             alt="star"/>
-            ))}
-          </div>
+              {Array.from({ length: 5 }).map((_, index) => (
+                <Image
+                
+                  key={index}
+                  src={Symbol} 
+                  alt="star"
+                />
+              ))}
+            </div>
           </div>
           {/* Star Ratings */}
           

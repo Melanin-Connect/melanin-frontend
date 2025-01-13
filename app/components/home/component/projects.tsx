@@ -5,7 +5,7 @@ import Container2 from "@/public/assets/Container-2.png";
 import Container3 from "@/public/assets/Container-3.png";
 import Container4 from "@/public/assets/Container-4.png";
 import { StaticImageData } from "next/image";
-import Image from "next/image"
+import Image from "next/image";
 import heading from "@/public/assets/heading.png";
 
 // Define projects array with explicit types
@@ -60,12 +60,12 @@ const Home: React.FC = () => {
           className="mx-auto"
         />
         <h6 className="text-orange-500 text-lg md:text-sm font-bold uppercase">
-        Companies projects
+          Companies projects
         </h6>
         <p className="mt-2 md:mt-4 w-full text-gray-800 font-semibold text-2xl md:text-[24] lg:text-[30] font-epilogue">
-        Working With Over 300 Startups and
-        <br />
-        Companies
+          Working With Over 300 Startups and
+          <br />
+          Companies
         </p>
       </div>
 
@@ -77,8 +77,12 @@ const Home: React.FC = () => {
               index === 0 || index === 4 ? "md:col-span-2" : ""
             }`}
           >
-            <img
-              src={typeof project.image === "string" ? project.image : project.image.src}
+            <Image
+              src={
+                typeof project.image === "string"
+                  ? project.image
+                  : project.image.src
+              }
               alt={project.title}
               className="object-cover w-full h-full scale-110"
             />
