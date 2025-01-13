@@ -1,8 +1,8 @@
 import React from "react";
-import Team1 from "@/public/assets/avatar (1).png";
-import Team2 from "@/public/assets/avatar.png"
+import Team1 from "@/public/assets/avatar.png";
+import Team2 from "@/public/assets/avatar1.png"
 import Team3 from "@/public/assets/avatar2.png";
-import Team4 from "@/public/assets/_avatar.png";
+import Team4 from "@/public/assets/avatar3.png"
 import Image from "next/image";
 
 const TeamMembers: React.FC = () => {
@@ -44,6 +44,8 @@ const TeamMembers: React.FC = () => {
               <Image
                 src={member.image.src}
                 alt={member.name}
+                width={160}
+                height={160}
                 className="object-cover w-full h-full"
               />
             </div>

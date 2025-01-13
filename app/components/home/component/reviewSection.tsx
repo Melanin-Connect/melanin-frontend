@@ -1,10 +1,10 @@
 import React from "react";
 import Gradient1 from "@/public/assets/Gradient1.png";
 import Image from "next/image";
-import avatar1 from "@/public/assets/avatar (1).png";
-import avatar2 from "@/public/assets/avatar.png";
+import avatar1 from "@/public/assets/avatar.png";
+import avatar2 from "@/public/assets/avatar1.png";
 import avatar3 from "@/public/assets/avatar2.png";
-import avatar4 from "@/public/assets/_avatar.png";
+import avatar4 from "@/public/assets/avatar3.png";
 import Symbol from "@/public/assets/Symbol.png"
 
 const ReviewSection: React.FC = () => {
@@ -33,21 +33,29 @@ const ReviewSection: React.FC = () => {
             <Image
               src={avatar1}
               alt="Client 1"
+              width={64}
+              height={64}
               className="w-16 h-16 rounded-full object-cover"
             />
             <Image
               src={avatar2}
               alt="Client 2"
+              width={64}
+              height={64}
               className="w-16 h-16 rounded-full object-cover"
             />
             <Image
               src={avatar3}
               alt="Client 3"
+              width={64}
+              height={64}
               className="w-16 h-16 rounded-full object-cover"
             />
             <Image
               src={avatar4}
               alt="Client 4"
+              width={64}
+              height={64}
               className="w-16 h-16 rounded-full object-cover"
             />
           </div>
@@ -70,10 +78,11 @@ const ReviewSection: React.FC = () => {
             <div className="flex pt-5 space-x-1">
               {Array.from({ length: 5 }).map((_, index) => (
                 <Image
-                
                   key={index}
                   src={Symbol} 
                   alt="star"
+                  width={24}
+                  height={24}
                 />
               ))}
             </div>

@@ -84,6 +84,8 @@ const Home: React.FC = () => {
                   : project.image.src
               }
               alt={project.title}
+              width={300}
+              height={200}
               className="object-cover w-full h-full scale-110"
             />
             <div className="absolute inset-0 "></div>

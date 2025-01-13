@@ -6,6 +6,7 @@ import daignostics from "@/public/logos/Vector (3).png"
 import itv from "@/public/logos/itv.png"
 import nrik from "@/public/logos/rik.png"
 import fiba from "@/public/logos/Vector.png"
+import Image from "next/image";
 
 const logos = [
   { src: forbs, alt: "Forbes" },
@@ -27,9 +28,11 @@ const LogoSection: React.FC = () => {
               key={index}
               className="w-36 h-20 flex items-center justify-center bg-transparent border border-gray-500 rounded-full p-4"
             >
-              <img
+              <Image
                 src={typeof logo.src === 'string' ? logo.src : logo.src.src}
                 alt={logo.alt}
+                width={144}
+                height={80}
                 className="max-w-full max-h-full object-contain"
               />
             </div>
