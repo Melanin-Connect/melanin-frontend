@@ -1,12 +1,9 @@
 import React from "react";
-
-
-
 import Team1 from "@/public/assets/avatar (1).png";
 import Team2 from "@/public/assets/avatar.png"
 import Team3 from "@/public/assets/avatar2.png";
 import Team4 from "@/public/assets/_avatar.png";
-import { StaticImageData } from "next/image";
+import Image from "next/image";
 
 const TeamMembers: React.FC = () => {
   const team = [
@@ -41,10 +38,10 @@ const TeamMembers: React.FC = () => {
         <h2 className="text-4xl font-bold text-gray-900">Team Members</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
-        {team.map((member, index) => (
-          <div key={index} className="text-center">
+        {team.map((member) => (
+          <div key={member.name} className="text-center">
             <div className="w-40 h-40 mx-auto rounded-[30%] overflow-hidden mb-4">
-              <img
+              <Image
                 src={member.image.src}
                 alt={member.name}
                 className="object-cover w-full h-full"
