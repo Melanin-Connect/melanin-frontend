@@ -3,6 +3,12 @@ import HeroSection from "./component/Herosection"
 import StatsSection from './component/StatsSection'
 import BusinessServices from './component/businessService'
 import Projects from './component/projects'
+import ClientReviews from './component/reviewSection'
+import Team from "../common/team"
+import Soludtion from "./component/solution"
+import TipsAdvice from "./component/news"
+import Partners from '../common/partners'
+import Contacts  from "./component/contact"
 
 
 const Index: React.FC = () => {
@@ -14,6 +20,12 @@ const Index: React.FC = () => {
       <StatsSection />
       <BusinessServices />
       <Projects />
+      <ClientReviews />
+      <Team />
+      <Soludtion  />
+      <TipsAdvice />
+      <Contacts />  
+      <Partners />
     
     </>
   )
