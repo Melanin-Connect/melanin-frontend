@@ -1,5 +1,5 @@
 const ContactForm = () => (
-    <div className="bg-white p-8 rounded-lg shadow-lg">
+    <div className="bg-white p-8 rounded-lg ">
       <h3 className="text-2xl font-bold text-[#1F244C] mb-6">Send a Message</h3>
       <form className="space-y-4">
         <input

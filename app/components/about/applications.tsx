@@ -20,7 +20,7 @@ const applications = () => {
         The best application features you
        
           <br />
-          won't find anywhere
+          won&apos;t find anywhere
         </p>
       </div>
     </div>

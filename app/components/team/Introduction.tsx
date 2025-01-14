@@ -43,11 +43,11 @@ const ProfessionalIntro = () => {
             We will help you <br /> You know you want it
           </h2>
           <p className="text-gray-600">
-            We're not just a team of tech enthusiasts; we're passionate about
+            We&apos;re not just a team of tech enthusiasts; we&apos;re passionate about
             helping you unlock new possibilities and achieve your business
-            potential. With every project, our goal is to make sure you're
-            supported, informed, and inspired to reach new heights. Let's bring
-            your vision to life—because we know you want it, and we're here to
+            potential. With every project, our goal is to make sure you&apos;re
+            supported, informed, and inspired to reach new heights. Let&apos;s bring
+            your vision to life—because we know you want it, and we&apos;re here to
             make it happen.
           </p>
         </div>
