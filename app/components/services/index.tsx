@@ -11,8 +11,9 @@ const ServicesPage: React.FC = () => {
       
       <Services />
       <WorkingProcess />
-      <Newsletter />
+   
     </div>
+       <Newsletter />
     </section>
   );
 };

@@ -1,8 +1,13 @@
-const RecentBlogPost = () => (
+import React from "react";
+import Image from "next/image";
+import img from "@/public/assets/img.png"
+import img2 from "@/public/assets/blog (1).png"
+
+const RecentBlogPost: React.FC = () => (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
       <div className="lg:col-span-2">
         <div className="relative overflow-hidden rounded-lg">
-          <div className="bg-gray-300 h-64"></div> {/* Placeholder for the image */}
+          <Image src={img} alt="Blog Post Image" layout="fill" objectFit="cover" className="bg-gray-300 h-64" />
           <div className="p-6 bg-white">
             <p className="text-sm text-orange-500 uppercase mb-2">Lifestyle • Admin • Comment</p>
             <h3 className="text-2xl font-bold text-[#1F244C] mb-4">
@@ -20,7 +25,7 @@ const RecentBlogPost = () => (
       <div className="space-y-4">
         {[1, 2, 3].map((item) => (
           <div key={item} className="flex gap-4">
-            <div className="bg-gray-300 w-20 h-20 rounded-lg"></div> {/* Placeholder for image */}
+            <Image src={img2} alt="Blog Post Image" width={80} height={30} className="rounded-lg" />
             <div>
               <p className="text-sm text-orange-500 uppercase mb-1">Lifestyle • Admin • Comment</p>
               <h4 className="text-lg font-bold text-[#1F244C]">
