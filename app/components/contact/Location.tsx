@@ -11,10 +11,10 @@ const Locations = () => (
           alt="Accra Office"
           className="w-full h-64 object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <p className="text-white text-lg font-semibold">Accra</p>
-          <p>30 Onyankle Street
-          Abelemkpe</p>
+        <div className="absolute inset-0 flex ml-10 mt-40 items-start justify-start flex-col">
+          <p className="text-white text-lg font-semibold">Accra</p> 
+          <p className="text-white">30 Onyankle Street</p>
+          <p className="text-white">Abelemkpe</p>
         </div>
       </div>
       <div className="relative group overflow-hidden rounded-lg shadow-lg">
@@ -23,10 +23,10 @@ const Locations = () => (
           alt="Kumasi Office"
           className="w-full h-64 object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <p className="text-white text-lg font-semibold">Kumasi</p>
-          <p>30 Onyankle Street
-          Abelemkpe</p>
+        <div className="absolute inset-0 flex ml-10 mt-40 items-start justify-start flex-col">
+          <p className="text-white text-lg font-semibold">Accra</p> 
+          <p className="text-white">30 Onyankle Street</p>
+          <p className="text-white">Abelemkpe</p>
         </div>
       </div>
     </div>

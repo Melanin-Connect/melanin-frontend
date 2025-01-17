@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import ServiceImage from "@/public/assets/service.png"
+import growth from "@/public/assets/growth.png"
+
 
 const Services = () => {
   const services = [
@@ -14,7 +16,7 @@ const Services = () => {
   return (
     <section className="container mx-auto px-4 py-16">
       <h2 className="text-center text-2xl md:text-3xl font-bold mb-8">
-        We provide a wide range of business services
+        We provide a wide range of <br />business services
       </h2>
 
       {/* Services List */}
@@ -23,9 +25,18 @@ const Services = () => {
           <div
             key={index}
             className={`p-4 border rounded-lg text-center cursor-pointer ${
-              index === 0 ? "bg-orange-100 text-orange-500" : ""
+              index === 0 ? "bg-orange-500 text-white" : ""
             }`}
           >
+            <div className="flex justify-center">
+              <Image
+                src={growth}
+                alt={`${service} Illustration`}
+                width={40}
+                height={40}
+                className="mb-2"
+              />
+            </div>
             <p>{service}</p>
           </div>
         ))}
@@ -37,6 +48,7 @@ const Services = () => {
           {/* Replace with your image */}
           <Image
             src={ServiceImage}
+
             alt="Service Illustration"
             layout="fill"
             objectFit="contain"

@@ -25,7 +25,10 @@ const WorkingProcess = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-white py-16">
+       <p className="text-center text-orange-400 mb-2">
+          Working progress
+        </p>
       <div className="container mx-auto px-4">
         <h2 className="text-center text-2xl md:text-3xl font-bold mb-8">
           How does it work
@@ -33,7 +36,7 @@ const WorkingProcess = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="text-center">
-              <div className="text-orange-500 text-4xl font-bold mb-4">
+              <div className="text-orange-200 text-4xl font-bold mb-4">
                 {`0${index + 1}`}
               </div>
               <h3 className="text-lg font-bold mb-2">{step.title}</h3>

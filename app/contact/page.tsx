@@ -4,7 +4,7 @@ import Contact from "../components/contact/contact";
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-[#F5F5FD]">
       <Breadcrumb title="contact" />
       <Contact />
     

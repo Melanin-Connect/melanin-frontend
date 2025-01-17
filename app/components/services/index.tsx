@@ -6,7 +6,7 @@ import Newsletter from "./Newsletter";
 
 const ServicesPage: React.FC = () => {
   return (
-    <main className="bg-white text-black">
+    <main className=" text-black">
       
       <Services />
       <WorkingProcess />
