@@ -5,7 +5,7 @@ import imgSmall from "@/public/assets/_image (1).png";
 
 const RecentBlogPost: React.FC = () => (
   <section className="bg-[#F8F8FB] max-w-[1400px] py-12">
-    <div className="container mx-auto px-4 lg:px-12">
+    <div className="container mx-auto px-0 items-center justify-center lg:px-5">
       <div className="text-center mb-8">
         <p className="text-orange-500 text-sm uppercase font-semibold mb-2">
           Latest News
