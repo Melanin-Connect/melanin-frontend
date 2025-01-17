@@ -35,7 +35,7 @@ const ProfessionalIntro = () => {
   ];
 
   return (
-    <section className="container mx-auto  bg-gray-100 px-4 py-16">
+    <section className="container mx-auto text-black bg-white px-4 py-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Left Text */}
         <div>

@@ -30,7 +30,8 @@ const FAQPage: React.FC = () => {
   ];
 
   return (
-    <div>
+    <section className="relative bg-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <Hero />
     
       <div className="container text-black mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -60,6 +61,7 @@ const FAQPage: React.FC = () => {
         <HelpContact />
       </div>
     </div>
+    </section>
   );
 };
 
