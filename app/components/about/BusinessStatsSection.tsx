@@ -22,7 +22,7 @@ const BusinessStatsSection: React.FC = () => {
             <div className="flex gap-8">
               <div>
                 <p className="text-4xl font-bold text-[#1F244C]">42k</p>
-                <p className="text-gray-500">Projects We've Completed</p>
+                <p className="text-gray-500">Projects We&apos;ve Completed</p>
               </div>
               <div>
                 <p className="text-4xl font-bold text-[#1F244C]">5%</p>
