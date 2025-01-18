@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import ServiceImage from "@/public/assets/service.png"
 import growth from "@/public/assets/growth.png"
-
+import Link from "next/link";
 
 const Services = () => {
   const services = [
@@ -65,9 +65,11 @@ const Services = () => {
             effectively. Improve customer satisfaction while reducing
             operational costs.
           </p>
-          <button className="bg-orange-500 text-white px-6 py-2 rounded-lg">
-            View Detail
-          </button>
+          <Link href="/servicedetails">
+                  <button className="bg-[#FE7146] text-white text-sm py-2 px-4 rounded-full hover:bg-orange-600 transition">
+                    View Detials→
+                  </button>
+                </Link>
         </div>
       </div>
     </section>

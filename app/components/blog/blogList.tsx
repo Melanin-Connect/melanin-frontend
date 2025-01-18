@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import image1 from "@/public/assets/_image (1).png"
+import Link from "next/link";
 
 const BlogList: React.FC = () => (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -15,9 +16,11 @@ const BlogList: React.FC = () => (
             <p className="text-gray-500 mb-4">
               As a process transformation company, we rethink and rebuild processes for the digital age...
             </p>
-            <button className="bg-[#FE7146] text-white text-[14px] lg:text-base py-2 lg:py-3 px-6 lg:px-14 rounded-full hover:bg-orange-600 transition w-full sm:w-auto whitespace-nowrap">
-                Read More
-              </button>
+            <Link href="/blogdetials">
+                <button className="bg-[#FE7146] text-white text-sm lg:text-base py-2 px-6 rounded-full hover:bg-orange-600 transition">
+                  Read More →
+                </button>
+              </Link>
           </div>
         </div>
       ))}
