@@ -1,12 +1,24 @@
 import React from "react";
 import Image from "next/image";
-import busines from "@/public/assets/business.png"
-import Gradient from "@/public/assets/gradient.png";
+
+import business from "@/public/assets/business.png.png";
+import gradient from "@/public/assets/gradient.png";
 
 const BusinessStatsSection: React.FC = () => {
   return (
-    <section className="bg-white py-16">
-      <div className="container mx-auto px-4 lg:px-12">
+    <section className="relative bg-white py-16 overflow-hidden">
+      {/* Gradient Background on the Right Half */}
+      <div className="absolute inset-y-0 right-0 w-1/2 hidden lg:block">
+        <Image
+          src={gradient}
+          alt="Gradient Background"
+          layout=""
+          objectFit="cover"
+          className="z-0"
+        />
+      </div>
+
+      <div className="relative container mx-auto px-4 lg:px-12 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
           {/* Left Section */}
           <div>
@@ -14,10 +26,10 @@ const BusinessStatsSection: React.FC = () => {
               We’re Here To Do Better Business.
             </h2>
             <p className="text-gray-600 mb-6">
-              At Melanin Connect, we lead with a dynamic approach to achieve
-              far better results. Through intelligent and powerful tools for
-              modern businesses, we ensure every need is met for customers,
-              growth, advisory services, and long-term sustainable development.
+              At Melanin Connect, we lead with a dynamic approach to achieve far
+              better results. Through intelligent and powerful tools for modern
+              businesses, we ensure every need is met for customers, growth,
+              advisory services, and long-term sustainable development.
             </p>
             <div className="flex gap-8">
               <div>
@@ -31,20 +43,13 @@ const BusinessStatsSection: React.FC = () => {
             </div>
           </div>
           {/* Right Section */}
-          <div className="lg:w-1/2 mt-40 lg:mt-0 relative">
-            <div className="absolute inset-1 -top-20 -right-20 hidden lg:block  justify-center">
-              <Image
-                src={Gradient}
-                alt="hero"
-                width={900}
-                height={563.16}
-                className="flex-shrink-0 mt-36 w-full h-auto lg:mt-0"
-              />
-            <Image 
-            src={busines}
-            alt="business"
+          <div className="lg:w-1/2  mt-40 lg:mt-0 relative">
+            <Image
+              src={business}
+              alt="Business Stats"
+              width={670}
+              className="w-[670px]  relative z-10"
             />
-            </div>
           </div>
         </div>
       </div>

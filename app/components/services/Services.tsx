@@ -65,7 +65,7 @@ const Services = () => {
             effectively. Improve customer satisfaction while reducing
             operational costs.
           </p>
-          <Link href="/servicedetails">
+          <Link href="/servicedetials">
                   <button className="bg-[#FE7146] text-white text-sm py-2 px-4 rounded-full hover:bg-orange-600 transition">
                     View Detials→
                   </button>

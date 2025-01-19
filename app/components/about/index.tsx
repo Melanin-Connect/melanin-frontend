@@ -7,12 +7,14 @@ import BusinessModelSection from "./BusinessModelSection";
 import BusinessStatsSection from "./BusinessStatsSection";
 import FeaturesSection from "./FeaturesSection";
 import FAQSection from "./FAQSection";
+import Hero from "./hero"
 
 const index = () => {
   return (
     <div>
       <Breadcrumb title="About" />
       <BusinessModelSection />
+      <Hero />
       
       <Team />
       <BusinessStatsSection />
