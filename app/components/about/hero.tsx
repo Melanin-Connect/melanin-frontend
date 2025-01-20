@@ -5,7 +5,7 @@ import img1 from "@/public/assets/Background (1).png";
 
 const SolutionsSection: React.FC = () => {
   return (
-    <section className="bg-[#f7f9f8] py-16">
+    <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="w-[880px] h-[258]">
             
@@ -29,7 +29,7 @@ const SolutionsSection: React.FC = () => {
             {/* Group2 */}
             <div className="relative items-end  flex-col-2 justify-end">
               <div className="flex flex-col-2">
-                <div className=" items-start w-[330px] text-start space-y-4 py-12 bg-gray-50">
+                <div className=" items-start w-[330px] text-start space-y-4 py-120">
                   {/* Icon Container */}
                   <div>
                     <Image src={img1} alt="" />
@@ -44,7 +44,7 @@ const SolutionsSection: React.FC = () => {
                     blockchain technology.
                   </p>
                 </div>
-                <div className=" items-start w-[330px] text-start space-y-4 py-12 bg-gray-50">
+                <div className=" items-start w-[330px] text-start space-y-4 py-12">
                   <div>
                     <Image src={img1} alt="" />
                   </div>
