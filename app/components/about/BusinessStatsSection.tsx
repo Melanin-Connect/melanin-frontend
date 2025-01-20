@@ -31,14 +31,37 @@ const BusinessStatsSection: React.FC = () => {
               businesses, we ensure every need is met for customers, growth,
               advisory services, and long-term sustainable development.
             </p>
-            <div className="flex gap-8">
-              <div>
-                <p className="text-4xl font-bold text-[#1F244C]">42k</p>
-                <p className="text-gray-500">Projects We&apos;ve Completed</p>
-              </div>
-              <div>
-                <p className="text-4xl font-bold text-[#1F244C]">5%</p>
-                <p className="text-gray-500">Conversion Rate Increase</p>
+            <div className="flex justify-center items-center py-8">
+              <div className="flex items-center justify-between gap-12  shadow-orange-400 shadow-md max-w-4xl py-8 px-12 bg-white rounded-full shadow-lg relative">
+              
+                {/* First Stat */}
+                <div className="    w-24 h-24 rounded-full border-[3px] border-orange-500">
+                  {/* Second Stat */}
+                  <div className="relative flex flex-col items-center">
+                    {/* Outer Red Circle */}
+
+                    <p className="text-2xl text-center font-extrabold text-black">
+                      5%
+                    </p>
+                    <p className="text-gray-600 text-center text-sm">
+                      Companies success rate
+                    </p>
+                  </div>
+                </div>
+
+                <div className="    w-24 h-24 rounded-full border-[3px] border-orange-500">
+                  {/* Second Stat */}
+                  <div className="relative flex flex-col items-center">
+                    {/* Outer Red Circle */}
+
+                    <p className="text-2xl text-center font-extrabold text-black">
+                      5%
+                    </p>
+                    <p className="text-gray-600 text-center text-sm">
+                      Companies success rate
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

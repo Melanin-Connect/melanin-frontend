@@ -1,5 +1,7 @@
 'use client'
 import React, { useState } from "react";
+import Image from "next/image"
+import img from "@/public/assets/test.png"
 
 const testimonials = [
   {
@@ -44,7 +46,7 @@ const TestimonialSection: React.FC = () => {
     <section className="relative bg-white  py-16">
       <div className="container mx-auto w-[1114.55px] px-4 lg:px-12 text-center">
         {/* Testimonial Box */}
-        <div className=" rounded-3xl  p-8 m-20 lg:p-12 relative">
+        <div className=" rounded-s-full rounded-e-full bg-[#FFF8E1]  p-8 m-20 lg:p-12 relative">
           {/* Quotation Mark */}
           <div className="flex justify-center mb-4">
             <div className="text-[#FE7146] text-4xl font-bold">&ldquo;</div>
@@ -64,46 +66,41 @@ const TestimonialSection: React.FC = () => {
               {"⭐".repeat(currentTestimonial.rating)}
             </div>
           </div>
-        </div>
-
-       
-        {/* <div className="flex justify-center mt-8 space-x-4">
-          <button
-            onClick={handlePrevious}
-            className="bg-[#FE7146] text-white px-4 py-2 rounded-lg shadow hover:bg-[#e35d3b]"
-          >
-            Previous
-          </button>
-          <button
-            onClick={handleNext}
-            className="bg-[#FE7146] text-white px-4 py-2 rounded-lg shadow hover:bg-[#e35d3b]"
-          >
-            Next
-          </button>
-        </div> */}
-      </div>
-
-      {/* Floating Avatars (optional, static for simplicity) */}
-      <div className="absolute -top-12 left-8 lg:left-16">
+          <div className="absolute -top-10 left-8 lg:left-16">
         <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-          <img src="https://via.placeholder.com/150" alt="Avatar 1" />
+          <Image src={img} alt="Avatar 1" />
         </div>
       </div>
       <div className="absolute -top-6 right-8 lg:right-16">
         <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-          <img src="https://via.placeholder.com/150" alt="Avatar 2" />
+          <Image src={img} alt="Avatar 2" />
         </div>
       </div>
-      <div className="absolute -bottom-8 left-12">
+      <div className="absolute -bottom-8 left-5">
         <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-          <img src="https://via.placeholder.com/150" alt="Avatar 3" />
+          <Image src={img} alt="Avatar 3" />
         </div>
       </div>
-      <div className="absolute -bottom-4 right-12">
+      <div className="absolute bottom-36 -left-20">
         <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-          <img src="https://via.placeholder.com/150" alt="Avatar 4" />
+          <Image src={img} alt="Avatar 3" />
         </div>
       </div>
+      <div className="absolute -bottom-4 right-5">
+        <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
+          <Image src={img} alt="Avatar 4" />
+        </div>
+      </div>
+      
+        </div>
+        
+
+       
+       
+      </div>
+
+      {/* Floating Avatars (optional, static for simplicity) */}
+      
     </section>
   );
 };

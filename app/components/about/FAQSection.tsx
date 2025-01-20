@@ -113,7 +113,7 @@ const FAQSection: React.FC = () => {
                   onClick={() => toggleFAQ(2)}
                 >
                   <span
-                    className={`text-2xl font-bold ${
+                    className={`text-xl font-bold ${
                       activeIndex === 2 ? "text-[#FE7146]" : "text-[#1F244C]"
                     }`}
                   >
@@ -182,7 +182,7 @@ const FAQSection: React.FC = () => {
                   onClick={() => toggleFAQ(4)}
                 >
                   <span
-                    className={`text-2xl font-bold ${
+                    className={`text-xl font-bold ${
                       activeIndex === 4 ? "text-[#FE7146]" : "text-[#1F244C]"
                     }`}
                   >
