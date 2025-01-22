@@ -90,10 +90,6 @@ docker build -t my-nextjs-app --target prod .
 docker run -p 3000:3000 my-nextjs-app
 ```
 
-### Alternative Deployment
-
-The project can also be deployed on [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme), the platform from the creators of Next.js.
-
 ## Learn More
 
 - [Next.js Documentation](https://nextjs.org/docs)
@@ -108,6 +104,3 @@ The project can also be deployed on [Vercel](https://vercel.com/new?utm_medium=d
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
