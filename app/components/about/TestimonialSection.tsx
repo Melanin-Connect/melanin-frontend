@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from "react";
-import Image from "next/image"
-import img from "@/public/assets/test.png"
+import Image from "next/image";
+import img from "@/public/assets/test.png";
 
 const testimonials = [
   {
@@ -43,16 +43,16 @@ const TestimonialSection: React.FC = () => {
   const currentTestimonial = testimonials[currentPage];
 
   return (
-    <section className="relative bg-white  py-16">
-      <div className="container mx-auto w-[1114.55px] px-4 lg:px-12 text-center">
+    <section className="relative bg-white py-12 sm:py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 max-w-4xl">
         {/* Testimonial Box */}
-        <div className=" rounded-s-full rounded-e-full bg-[#FFF8E1]  p-8 m-20 lg:p-12 relative">
+        <div className="rounded-s-full rounded-e-full bg-[#FFF8E1] p-6 sm:p-8 lg:p-12 relative text-center shadow-lg">
           {/* Quotation Mark */}
           <div className="flex justify-center mb-4">
             <div className="text-[#FE7146] text-4xl font-bold">&ldquo;</div>
           </div>
           {/* Testimonial Text */}
-          <p className="text-gray-700 text-lg lg:text-xl font-medium mb-6">
+          <p className="text-gray-700 text-base sm:text-lg lg:text-xl font-medium mb-6">
             {currentTestimonial.text}
           </p>
           {/* Author Info */}
@@ -66,41 +66,49 @@ const TestimonialSection: React.FC = () => {
               {"⭐".repeat(currentTestimonial.rating)}
             </div>
           </div>
-          <div className="absolute -top-10 left-8 lg:left-16">
-        <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-          <Image src={img} alt="Avatar 1" />
+          {/* Floating Avatars */}
+          <div className="absolute -top-10 left-4 sm:left-8 lg:left-16">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
+              <Image src={img} alt="Avatar 1" />
+            </div>
+          </div>
+          <div className="absolute -top-6 right-4 sm:right-8 lg:right-16">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
+              <Image src={img} alt="Avatar 2" />
+            </div>
+          </div>
+          <div className="absolute -bottom-8 left-3 sm:left-5">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
+              <Image src={img} alt="Avatar 3" />
+            </div>
+          </div>
+          <div className="absolute bottom-32 -left-12 sm:-left-16">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
+              <Image src={img} alt="Avatar 4" />
+            </div>
+          </div>
+          <div className="absolute -bottom-4 right-3 sm:right-5">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
+              <Image src={img} alt="Avatar 5" />
+            </div>
+          </div>
         </div>
       </div>
-      <div className="absolute -top-6 right-8 lg:right-16">
-        <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-          <Image src={img} alt="Avatar 2" />
-        </div>
-      </div>
-      <div className="absolute -bottom-8 left-5">
-        <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-          <Image src={img} alt="Avatar 3" />
-        </div>
-      </div>
-      <div className="absolute bottom-36 -left-20">
-        <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-          <Image src={img} alt="Avatar 3" />
-        </div>
-      </div>
-      <div className="absolute -bottom-4 right-5">
-        <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-          <Image src={img} alt="Avatar 4" />
-        </div>
-      </div>
-      
-        </div>
-        
-
-       
-       
-      </div>
-
-      {/* Floating Avatars (optional, static for simplicity) */}
-      
+      {/* Pagination Buttons
+      <div className="flex justify-center mt-6 space-x-4">
+        <button
+          onClick={handlePrevious}
+          className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-full shadow-md"
+        >
+          Previous
+        </button>
+        <button
+          onClick={handleNext}
+          className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-full shadow-md"
+        >
+          Next
+        </button>
+      </div> */}
     </section>
   );
 };

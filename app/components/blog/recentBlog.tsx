@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const RecentBlogPost: React.FC = () => (
   <section className="bg-[#F8F8FB] max-w-[1400px] py-12">
-    <div className="container mx-auto px-0 items-center justify-center lg:px-5">
+    <div className="container mx-auto px-4 lg:px-5">
       {/* Header Section */}
       <div className="text-center mb-8">
         <p className="text-orange-500 text-sm uppercase font-semibold mb-2">
@@ -58,7 +58,7 @@ const RecentBlogPost: React.FC = () => (
         {/* Small Blog Posts */}
         <div className="space-y-6">
           {[1, 2, 3, 4].map((item) => (
-            <div key={item} className="flex gap-4 items-center">
+            <div key={item} className="flex flex-col md:flex-row gap-4 items-center">
               <div className="relative w-28 h-28">
                 <Image
                   src={imgSmall}
