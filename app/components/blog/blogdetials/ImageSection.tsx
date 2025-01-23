@@ -4,8 +4,6 @@ import Image from "next/image";
 import img from "@/public/assets/img.png"
 
 
-import next from "next";
-
 
 const ImageSection = () => {
     return (
