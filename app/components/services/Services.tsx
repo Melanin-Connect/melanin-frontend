@@ -1,7 +1,6 @@
 'use client'
 import React, { useState } from "react";
 import Image from "next/image";
-import ServiceImage from "@/public/assets/service.png";
 import growth from "@/public/assets/service.png";
 import assistant from "@/public/assets/service.png";
 import productContent from "@/public/assets/service.png";
