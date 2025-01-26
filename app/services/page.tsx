@@ -5,8 +5,8 @@ import Index from "../components/services/index";
 
 const page = () => {
   return (
-    <div className="mt-2 bg-white">
-      <Breadcrumb title="AI-Powered Virtual Assistants & Chatbots" />
+    <div className="bg-white">
+      <Breadcrumb title="Services" />
       <Index />
     </div>
   );
