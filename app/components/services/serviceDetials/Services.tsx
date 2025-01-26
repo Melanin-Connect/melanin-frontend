@@ -13,7 +13,7 @@ const Services: React.FC = () => {
   return (
     <div className="flex bg-orange flex-col space-y-6">
       {/* Services List */}
-      <div className="bg-[#FE714] rounded-lg p-6">
+      <div className="bg-[#FE7146] rounded-lg p-6">
         <h3 className="text-xl font-semibold mb-4">Services List</h3>
         <ul className="space-y-2">
           {services.map((service, index) => (
