@@ -1,26 +1,26 @@
 import React from "react";
+import Link from "next/link";
 
 const Services: React.FC = () => {
   const services = [
-    "AI-Powered Virtual Assistants & Chatbots",
-    "AI-Generated Product Content",
-    "Blockchain-Enabled Payment Systems",
-    "Predictive Analytics & Sales Forecasting",
-    "AI-Powered Social Networking Platform",
+    { title: "AI-Powered Virtual Assistants & Chatbots", url: "/services/ai-chatbots" },
+    { title: "AI-Generated Product Content", url: "/services/ai-product-content" },
+    { title: "Blockchain-Enabled Payment Systems", url: "/services/blockchain-payments" },
+    { title: "Predictive Analytics & Sales Forecasting", url: "/services/predictive-analytics" },
+    { title: "AI-Powered Social Networking Platform", url: "/services/ai-social-networking" },
   ];
 
   return (
-    <div className="flex flex-col space-y-6">
+    <div className="flex bg-orange flex-col space-y-6">
       {/* Services List */}
       <div className="bg-[#FE714] rounded-lg p-6">
         <h3 className="text-xl font-semibold mb-4">Services List</h3>
         <ul className="space-y-2">
           {services.map((service, index) => (
-            <li
-              key={index}
-              className="text-gray-700 bg-white rounded-md p-2 shadow-sm"
-            >
-              {service}
+            <li key={index} className="text-gray-700 bg-white rounded-md p-2 shadow-sm">
+              <Link href={service.url} legacyBehavior>
+                <a className="hover:text-orange-500 transition">{service.title}</a>
+              </Link>
             </li>
           ))}
         </ul>
