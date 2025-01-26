@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import growth from "@/public/assets/growth.png";
-import assistant from "@/public/assets/growth.png";
-import productContent from "@/public/assets/growth.png";
-import paymentSystems from "@/public/assets/growth.png";
-import analytics from "@/public/assets/growth.png";
-import socialPlatform from "@/public/assets/growth.png";
+import assistant from "@/public/assets/service.png";
+import productContent from "@/public/assets/service.png";
+import paymentSystems from "@/public/assets/service.png";
+import analytics from "@/public/assets/service.png";
+import socialPlatform from "@/public/assets/service.png";
 import Link from "next/link";
 
 const Services = () => {
