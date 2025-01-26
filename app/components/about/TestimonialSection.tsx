@@ -1,7 +1,7 @@
-'use client'
-import React, { useState } from "react";
-import Image from "next/image";
-import img from "@/public/assets/test.png";
+'use client';
+import React, { useState } from 'react';
+import Image from 'next/image';
+import img from '@/public/assets/test.png';
 
 const testimonials = [
   {
@@ -30,23 +30,17 @@ const testimonials = [
 const TestimonialSection: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(0);
 
-  const handleNext = () => {
-    setCurrentPage((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const handlePrevious = () => {
-    setCurrentPage((prev) =>
-      prev === 0 ? testimonials.length - 1 : prev - 1
-    );
+  const handleDotClick = (index: number) => {
+    setCurrentPage(index);
   };
 
   const currentTestimonial = testimonials[currentPage];
 
   return (
     <section className="relative bg-white py-16">
-      <div className="container mx-auto w-[1114.55px] px-4 lg:px-12 text-center">
+      <div className="container mx-auto px-4 lg:px-12 md:w-[1114.55px]  sm:w-[373px] text-center">
         {/* Testimonial Box */}
-        <div className="rounded-s-full rounded-e-full bg-[#FFF8E1] p-8 m-20 lg:p-12 relative">
+        <div className="rounded-s-full rounded-e-full bg-[#FFF8E1] p-8 lg:p-12 relative">
           {/* Quotation Mark */}
           <div className="flex justify-center mb-4">
             <div className="text-[#FE7146] text-4xl font-bold">&ldquo;</div>
@@ -67,47 +61,45 @@ const TestimonialSection: React.FC = () => {
             </div>
           </div>
           {/* Floating Avatars */}
-          <div className="absolute -top-10 left-8 lg:left-16">
+          <div className="absolute hidden lg:block -top-10 left-8 lg:left-16">
             <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-              <Image src={img} alt="Avatar 1" />
+              <Image src={img} alt="Avatar 1  " />
             </div>
           </div>
-          <div className="absolute -top-6 right-8 lg:right-16">
+          <div className="absolute hidden lg:block -top-6 right-8 lg:right-16">
             <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-              <Image src={img} alt="Avatar 2" />
+              <Image src={img} alt="Avatar 2  " />
             </div>
           </div>
-          <div className="absolute -bottom-8 left-5">
+          <div className="absolute hidden lg:block -bottom-8 left-5 lg:left-12">
             <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-              <Image src={img} alt="Avatar 3" />
+              <Image src={img} alt="Avatar 3  " />
             </div>
           </div>
-          <div className="absolute bottom-36 -left-20">
+          {/* <div className="absolute hidden lg:block bottom-36 -left-20 lg:left-16">
             <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-              <Image src={img} alt="Avatar 3" />
+              <Image src={img} alt="Avatar 3  " />
             </div>
-          </div>
-          <div className="absolute -bottom-4 right-5">
+          </div> */}
+          <div className="absolute hidden lg:block -bottom-4 right-5 lg:right-16">
             <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-              <Image src={img} alt="Avatar 4" />
+              <Image src={img} alt="Avatar 4  " />
             </div>
           </div>
         </div>
 
-        {/* Navigation Buttons */}
-        <div className="flex justify-between mt-8">
-          <button
-            onClick={handlePrevious}
-            className="bg-[#FE7146] text-white px-4 py-2 rounded-lg hover:bg-[#FE7146]/90 transition"
-          >
-            Previous
-          </button>
-          <button
-            onClick={handleNext}
-            className="bg-[#FE7146] text-white px-4 py-2 rounded-lg hover:bg-[#FE7146]/90 transition"
-          >
-            Next
-          </button>
+        {/* Navigation Dots */}
+        <div className="flex justify-center mt-8 space-x-2">
+          {testimonials.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => handleDotClick(index)}
+              className={`w-3 h-3 rounded-full ${
+                currentPage === index ? "bg-[#FE7146]" : "bg-gray-300"
+              } transition-colors duration-300`}
+              aria-label={`Go to testimonial ${index + 1}`}
+            ></button>
+          ))}
         </div>
       </div>
     </section>
