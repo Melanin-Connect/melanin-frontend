@@ -1,73 +1,114 @@
-import React from "react";
-import Container3 from "@/public/assets/Container (3).png"
-import Image from "next/image"
-import background from "@/public/assets/Background1.png"
-
-
+"use client";
+import React, { useState } from "react";
+import Container3 from "@/public/assets/Container (3).png"; // Default image
+import Container4 from "@/public/assets/Container (3).png"; // Example for another image
+import Container5 from "@/public/assets/Container (3).png"; // Example for another image
+import Image, { StaticImageData } from "next/image"; // Import StaticImageData type
+import background from "@/public/assets/Background1.png";
 
 const SolutionsSection: React.FC = () => {
+  // State to track the active tab and its associated image and description
+  const [activeTab, setActiveTab] = useState<string>(
+    "AI-Driven Marketing Strategies"
+  );
+
+  // Descriptions and image sources for each tab
+  const solutions: Record<
+    string,
+    { description: string; image: StaticImageData }
+  > = {
+    "AI-Driven Marketing Strategies": {
+      description:
+        "Harness the power of artificial intelligence to craft data-driven marketing strategies that are tailored to your business goals and audience.",
+      image: Container3, // Image for this tab
+    },
+    "Content Generation & SEO Services": {
+      description:
+        "Leverage AI to create high-quality content and enhance your SEO efforts, improving your online visibility and driving organic traffic.",
+      image: Container4, // Image for this tab
+    },
+    "Blockchain-Based Payment & Transaction Solutions": {
+      description:
+        "Implement secure and transparent blockchain-based solutions for payments and transactions, ensuring efficiency and trust in your financial processes.",
+      image: Container5, // Image for this tab
+    },
+  };
+
   return (
-    <section className="bg-[#f7f9f8] py-16">
+    <section className="bg-[#f7f9f8] py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="w-[880px] h-[258]"> 
-            
-            {/* Header Section */}
+        {/* Header Section */}
         <div className="text-center">
           <p className="text-sm uppercase text-orange-500 font-bold tracking-widest">
             Solutions for all your needs
           </p>
-          <h1 className="text-4xl font-bold text-gray-900 mt-4">
+          <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mt-4 leading-snug">
             AI-driven, blockchain-powered <br />
             solutions for business growth.
           </h1>
         </div>
 
         {/* Tab Section */}
-        <div className="flex justify-center space-x-8 mt-8">
-          <button className="text-sm font-semibold text-gray-900 border-b-4 border-orange-500 pb-2">
+        <div className="flex flex-wrap justify-center gap-4 md:space-x-8 mt-8">
+          <button
+            className={`text-sm font-semibold pb-2 ${
+              activeTab === "AI-Driven Marketing Strategies"
+                ? "text-gray-900 border-b-4 border-orange-500"
+                : "text-gray-500 hover:text-gray-900"
+            }`}
+            onClick={() => setActiveTab("AI-Driven Marketing Strategies")}
+          >
             AI-Driven Marketing Strategies
           </button>
-          <button className="text-sm font-semibold text-gray-500 hover:text-gray-900 pb-2">
+          <button
+            className={`text-sm font-semibold pb-2 ${
+              activeTab === "Content Generation & SEO Services"
+                ? "text-gray-900 border-b-4 border-orange-500"
+                : "text-gray-500 hover:text-gray-900"
+            }`}
+            onClick={() => setActiveTab("Content Generation & SEO Services")}
+          >
             Content Generation & SEO Services
           </button>
-          <button className="text-sm font-semibold text-gray-500 hover:text-gray-900 pb-2">
+          <button
+            className={`text-sm font-semibold pb-2 ${
+              activeTab === "Blockchain-Based Payment & Transaction Solutions"
+                ? "text-gray-900 border-b-4 border-orange-500"
+                : "text-gray-500 hover:text-gray-900"
+            }`}
+            onClick={() =>
+              setActiveTab("Blockchain-Based Payment & Transaction Solutions")
+            }
+          >
             Blockchain-Based Payment & Transaction Solutions
           </button>
         </div>
 
-
-            
-        </div>
-       
         {/* Content Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 mt-12 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 mt-12 gap-12">
           {/* Text Section */}
           <div className="flex flex-col justify-center">
-          <div className="w-16 h-16 flex justify-center mb-10 items-center bg-orange-100 rounded-full">
-            <Image
-            src={background}
-            alt="image"
-            />
-              </div>
-            <div className="flex items-center space-x-4">
-            
-              <h3 className="text-2xl font-bold text-gray-900">
-                AI-Driven Marketing Strategies
-              </h3>
+            <div className="w-12 h-12 md:w-16 md:h-16 flex justify-center items-center bg-orange-100 rounded-full mb-6">
+              <Image
+                src={background}
+                alt="background icon"
+                className="w-8 h-8 md:w-12 md:h-12"
+              />
             </div>
-            <p className="text-gray-600 mt-4 text-lg">
-              Harness the power of artificial intelligence to craft
-              data-driven marketing strategies that are tailored to your
-              business goals and audience.
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900">
+              {activeTab}
+            </h3>
+            <p className="text-gray-600 mt-4 text-base md:text-lg leading-relaxed">
+              {solutions[activeTab].description}
             </p>
           </div>
 
           {/* Image Section */}
           <div className="flex justify-center">
-            <div className="w-full h-full max-w-lg overflow-hidden rounded-xl shadow-lg">
+            <div className="w-full h-full max-w-md md:max-w-lg overflow-hidden rounded-xl shadow-lg">
               <Image
-                src={Container3}
-                alt="AI Marketing Strategies"
+                src={solutions[activeTab].image} // Now using StaticImageData type
+                alt={activeTab}
                 className="object-cover w-full h-full"
               />
             </div>

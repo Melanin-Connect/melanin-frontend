@@ -1,9 +1,9 @@
 import React from "react";
 import heading from "@/public/assets/heading.png";
 import Image from "next/image";
-import Blog1 from "@/public/assets/blog-three-1.jpg.png"; // Replace with actual blog images
-import Blog2 from "@/public/assets/blog-three-2.jpg.png"; // Example second blog image
-import Blog3 from "@/public/assets/blog-three-3.jpg.png"; // Example third blog image
+import Blog1 from "@/public/assets/blog-three-1.jpg.png";
+import Blog2 from "@/public/assets/blog-three-2.jpg.png";
+import Blog3 from "@/public/assets/blog-three-3.jpg.png";
 import LinkImage from "@/public/assets/Border.png";
 
 const TipsAndAdvice: React.FC = () => {
@@ -59,39 +59,36 @@ const TipsAndAdvice: React.FC = () => {
               className="flex flex-col md:flex-row items-center gap-6 border-b border-gray-800 pb-8"
             >
               {/* Image Section */}
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 w-full md:w-64 h-auto md:h-40">
                 <Image
                   src={post.image}
                   alt={post.title}
-                  className="w-64 h-40 object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
               </div>
 
               {/* Content Section */}
-              <div className="flex flex-row ">
-               <div className=" w-[336.22px] h-[67px]">
-               <h2 className="text-black text-lg md:text-xl font-semibold">
-                  {post.title}
-                </h2>
+              <div className="flex flex-col md:flex-row items-start w-full md:w-auto">
+                <div className="w-full md:w-[336.22px]">
+                  <h2 className="text-black text-lg md:text-xl font-semibold">
+                    {post.title}
+                  </h2>
 
-                {/* Subtitle */}
-                <h3 className="text-sm font-medium text-orange-500 mt-2">
-                  {post.subtitle}
-                </h3>
+                  {/* Subtitle */}
+                  <h3 className="text-sm font-medium text-orange-500 mt-2">
+                    {post.subtitle}
+                  </h3>
+                </div>
 
-               </div>
-               
-
-               <div>
-               <p className="text-gray-700 text-sm w-[337.5px] h-[90px] mt-3">
-                  {post.description}
-                </p>
-               </div>
-                
+                <div className="mt-3 md:mt-0 md:ml-6">
+                  <p className="text-gray-700 text-sm w-full md:w-[337.5px] h-auto">
+                    {post.description}
+                  </p>
+                </div>
               </div>
 
               {/* Circle Icon */}
-              <div className="hidden md:flex items-center justify-center">
+              <div className="hidden md:flex items-center justify-center ml-auto">
                 <div className="w-8 h-8 border-2 ml-20 border-orange-500 rounded-full flex items-center justify-center">
                   <Image src={LinkImage} alt="Link Icon" width={12} height={12} />
                 </div>
