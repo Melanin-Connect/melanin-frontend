@@ -1,6 +1,10 @@
 import React from "react";
+interface SidebarProps {
+  selectedCategory: string;
+  onCategoryChange: (category: string) => void;
+}
 
-const Sidebar: React.FC = () => {
+const Sidebar: React.FC<SidebarProps> = ({ selectedCategory, onCategoryChange }) => {
   const menuItems = [
     "Platform",
     "Partners",
@@ -17,9 +21,10 @@ const Sidebar: React.FC = () => {
         {menuItems.map((item, index) => (
           <li
             key={index}
-            className={`${
-              index === 0 ? "text-white bg-orange-400" : "text-gray-700"
-            } px-4 py-2 rounded-lg text-sm font-medium cursor-pointer`}
+            className={`px-4 py-2 rounded-lg text-sm font-medium cursor-pointer ${
+              selectedCategory === item ? "text-white bg-orange-400" : "text-gray-700"
+            }`}
+            onClick={() => onCategoryChange(item)}
           >
             {item}
           </li>
