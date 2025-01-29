@@ -1,18 +1,18 @@
 import React from "react";
 import Image from "next/image";
-import Call from "@/public/assets/call.png"
-import Location from "@/public/assets/location.png"
-import Envelop from "@/public/assets/envelope.png"
-import Clock from "@/public/assets/clock.png"
-
+import Call from "@/public/assets/call.png";
+import Location from "@/public/assets/location.png";
+import Envelop from "@/public/assets/envelope.png";
+import Clock from "@/public/assets/clock.png";
 
 const ContactDetails = () => (
-    <div className="container mx-auto px-4 py-16 grid grid-cols-2 md:grid-cols-4 gap-6">
+  <div className="container mx-auto px-4 py-12">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
       {[
         {
           icon: Call,
           title: "Physical Address",
-          description: "30 Onyanklle Street, \n Accra - Ghana",
+          description: "30 Onyanklle Street,\n Accra - Ghana",
         },
         {
           icon: Location,
@@ -22,8 +22,7 @@ const ContactDetails = () => (
         {
           icon: Envelop,
           title: "Email Address",
-          description:
-            "info@melaninconnect.net\ncontact@melaninconnect.net",
+          description: "info@melaninconnect.net\ncontact@melaninconnect.net",
         },
         {
           icon: Clock,
@@ -33,24 +32,19 @@ const ContactDetails = () => (
       ].map((detail, index) => (
         <div
           key={index}
-          className="bg-white rounded-xl shadow-sm p-6 text-center"
+          className="bg-white rounded-xl shadow-md p-6 text-center flex flex-col items-center"
         >
-          <div className="flex justify-center mb-4">
-            <Image 
-              src={detail.icon}
-              alt={detail.title}
-              width={24}
-              height={24}
-            />
+          <div className="flex justify-center items-center w-12 h-12 bg-gray-100 rounded-full mb-4">
+            <Image src={detail.icon} alt={detail.title} width={40} height={40} />
           </div>
           <h3 className="text-lg font-bold text-[#1F244C] mb-2">{detail.title}</h3>
-          <p className="text-gray-500 text-sm leading-relaxed whitespace-pre-line">
+          <p className="text-gray-600 text-sm leading-relaxed whitespace-pre-line">
             {detail.description}
           </p>
         </div>
       ))}
     </div>
-  );
-  
-  export default ContactDetails;
-  
+  </div>
+);
+
+export default ContactDetails;
