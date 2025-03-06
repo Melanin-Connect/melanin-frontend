@@ -8,7 +8,6 @@ const page = () => {
     <div>
       <Breadcrumb title="blog" />
       <Blog />
-   
     </div>
   );
 };
