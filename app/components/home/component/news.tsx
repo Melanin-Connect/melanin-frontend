@@ -5,6 +5,7 @@ import Blog1 from "@/public/assets/blog-three-1.jpg.png";
 import Blog2 from "@/public/assets/blog-three-2.jpg.png";
 import Blog3 from "@/public/assets/blog-three-3.jpg.png";
 import LinkImage from "@/public/assets/Border.png";
+import Link from "next/link";
 
 const TipsAndAdvice: React.FC = () => {
   const blogPosts = [
@@ -90,7 +91,12 @@ const TipsAndAdvice: React.FC = () => {
               {/* Circle Icon */}
               <div className="hidden md:flex items-center justify-center ml-auto">
                 <div className="w-8 h-8 border-2 ml-20 border-orange-500 rounded-full flex items-center justify-center">
-                  <Image src={LinkImage} alt="Link Icon" width={12} height={12} />
+                  <Image
+                    src={LinkImage}
+                    alt="Link Icon"
+                    width={12}
+                    height={12}
+                  />
                 </div>
               </div>
             </div>
@@ -98,11 +104,13 @@ const TipsAndAdvice: React.FC = () => {
         </div>
 
         {/* Button */}
-        <div className="text-center mt-12">
-          <button className="bg-orange-500 text-white py-3 px-8 rounded-full text-lg hover:opacity-90 transition">
-            View All News
-          </button>
-        </div>
+        <Link href="/blog">
+          <div className="text-center mt-12">
+            <button className="bg-orange-500 text-white py-3 px-8 rounded-full text-lg hover:opacity-90 transition">
+              View All News
+            </button>
+          </div>
+        </Link>
       </div>
     </section>
   );

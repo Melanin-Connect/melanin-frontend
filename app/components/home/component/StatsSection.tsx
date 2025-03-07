@@ -157,13 +157,13 @@ const StatsSection: React.FC = () => {
               className="rounded-lg shadow-lg w-full h-auto"
             />
             <div className="absolute flex items-center justify-center">
-              <Image
+              {/* <Image
                 src={play}
                 width={50}
                 height={50}
                 alt="Play Button"
                 className="rounded-lg shadow-lg"
-              />
+              /> */}
             </div>
           </div>
         </div>

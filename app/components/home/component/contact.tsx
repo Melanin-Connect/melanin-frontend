@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import ContactUs from "@/public/assets/contactUs.png";
+import Link from "next/link"
 
 const Contact: React.FC = () => {
   return (
@@ -24,10 +25,13 @@ const Contact: React.FC = () => {
           your efforts. Turn your engagement into earnings today!
         </p>
 
-        {/* Button */}
-        <button className="bg-orange-500 text-white py-3 px-8 rounded-full text-lg hover:opacity-90 transition">
+      <Link href="/contact" >
+      
+       {/* Button */}
+       <button className="bg-orange-500 text-white py-3 px-8 rounded-full text-lg hover:opacity-90 transition">
           Contact Us
         </button>
+        </Link>
       </div>
     </div>
   );

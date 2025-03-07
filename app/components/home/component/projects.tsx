@@ -5,8 +5,10 @@ import Container2 from "@/public/assets/Container-2.png";
 import Container3 from "@/public/assets/Container-3.png";
 import Container4 from "@/public/assets/Container-4.png";
 import { StaticImageData } from "next/image";
+import Link from "next/link"
 import Image from "next/image";
 import heading from "@/public/assets/heading.png";
+
 
 // Define the projects array with explicit types
 type Project = {
@@ -45,11 +47,11 @@ const Home: React.FC = () => {
       </header>
 
       {/* Projects Section */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-6 max-w-7xl w-full">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 px-6 max-w-7xl w-full">
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`relative bg-gray-800 text-white rounded-xl overflow-hidden shadow-lg transition-transform transform hover:scale-105 ${
+            className={`relative bg-gray-800 text-white rounded-xl overflow-hidden shadow-lg transition-transform transform hover:scale-104 ${
               index === 0 || index === 4 ? "sm:col-span-2" : ""
             }`}
           >
@@ -75,9 +77,11 @@ const Home: React.FC = () => {
 
       {/* Call-to-Action Button */}
       <div className="mt-12 mb-16">
-        <button className="bg-orange-500 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-orange-600 shadow-lg transition duration-300">
+      <Link href="./services" >
+      <button className="bg-orange-500 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-orange-600 shadow-lg transition duration-300">
           View Our Services
         </button>
+      </Link>
       </div>
     </div>
   );
