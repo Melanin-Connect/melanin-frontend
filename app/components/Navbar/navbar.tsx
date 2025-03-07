@@ -25,7 +25,7 @@ const Header: React.FC = () => {
     { title: 'Services', url: 'services' },
     { title: 'Our Team', url: 'team' },
     { title: 'FAQs', url: 'faqs' },
-    { title: 'Blog', url: 'blog' },
+    // { title: 'Blog', url: 'blog' },
     { title: 'Contact', url: 'contact' },
   ];
 

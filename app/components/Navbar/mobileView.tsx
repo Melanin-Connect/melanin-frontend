@@ -67,13 +67,13 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
           >
             FAQs
           </Link>
-          <Link
+          {/* <Link
             href="/blog"
             className="text-gray-700 hover:text-orange-500 transition"
             onClick={toggleMenu} // Close menu on click
           >
             Blog
-          </Link>
+          </Link> */}
           <Link
             href="/contact"
             className="text-gray-700 hover:text-orange-500 transition"
