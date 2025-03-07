@@ -33,7 +33,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
 
           {/* Menu Links */}
           <Link
-            href="/home"
+            href="/"
             className="text-gray-700 hover:text-orange-500 transition"
             onClick={toggleMenu} // Close menu on click
           >
@@ -88,14 +88,14 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
             className="flex bg-orange-500 text-white rounded-full px-4 py-2 items-center space-x-2 hover:bg-orange-600 transition"
             onClick={toggleMenu} // Close menu on click
           >
-            <Image
+            {/* <Image
               className="brightness-0 invert"
               src={Call}
               alt="call"
               width={20}
               height={20}
-            />
-            <span>+233 000 000 0000</span>
+            /> */}
+            <span>Join WishList</span>
           </Link>
         </nav>
       </div>

@@ -20,7 +20,7 @@ const Header: React.FC = () => {
 
   // Mock data for the website pages. Replace this with a real data source (e.g., CMS, API).
   const pages = [
-    { title: 'Home', url: '' },
+    { title: 'Home', url: '/' },
     { title: 'About Us', url: 'about' },
     { title: 'Services', url: 'services' },
     { title: 'Our Team', url: 'team' },
@@ -114,14 +114,14 @@ const Header: React.FC = () => {
             href="tel:+2330000000000"
             className="hidden md:flex bg-orange-500 text-white rounded-full px-4 py-2 items-center space-x-2 hover:bg-orange-600 transition text-sm lg:text-base"
           >
-            <Image
+            {/* <Image
               className="brightness-0 invert"
               src={Call}
               alt="call"
               width={20}
               height={20}
-            />
-            <span>+233 000 000 0000</span>
+            /> */}
+            <span>Join Wishlist</span>
           </Link>
 
           {/* Mobile Menu Button */}

@@ -29,9 +29,12 @@ const HeroSection = () => {
               designed to boost your brand and streamline your operations.
             </p>
             <div className="flex flex-col lg:flex-row mt-4 mb-4 lg:mb-0 justify-center lg:justify-start space-x-0 lg:space-x-4">
+              <Link href= "/contact">
               <button className="bg-[#FE7146] text-white text-[14px] lg:text-base py-2 lg:py-3 px-6 lg:px-14 rounded-full hover:bg-orange-600 transition w-full sm:w-auto whitespace-nowrap">
                 Register Now
               </button>
+              
+              </Link>
               <Link
                 href="/about"
                 className="text-black py-2 lg:py-3 text-sm lg:text-base px-6 font-bold whitespace-nowrap"

@@ -4,6 +4,7 @@ import imgMain from "@/public/assets/img.png";
 import imgSmall from "@/public/assets/_image (1).png";
 import Link from "next/link";
 
+
 const RecentBlogPost: React.FC = () => (
   <section className="bg-[#F8F8FB] max-w-[1400px] py-12">
     <div className="container mx-auto px-4 lg:px-5">
