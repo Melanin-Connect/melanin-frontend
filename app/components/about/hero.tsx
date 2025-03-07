@@ -36,7 +36,7 @@ const SolutionsSection: React.FC = () => {
                     height={60}
                     className="pb-5"
                   />
-                  <h2 className="text-black font-bold">Mission</h2>
+                  <h2 className="text-black font-bold">Vision</h2>
                   <p className="text-gray-700 text-sm lg:text-base font-medium">
                     To be the leading digital community for business and
                     innovation, empowering a global network of individuals and
