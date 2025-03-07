@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import img1 from "@/public/assets/accordio-img-1.jpg.png";
 import img2 from "@/public/assets/accordio-img-2.jpg.png";
+import Link from "next/link"
 
 const FAQSection: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(1);
@@ -30,9 +31,11 @@ const FAQSection: React.FC = () => {
             <p className="text-black font-bold mb-3 md:mb-5">
               Phone No. +88(9800) 6802
             </p>
+            <Link href="/contact" >
             <button className="bg-[#FE7146] text-white py-3 px-6 rounded-full font-semibold">
               Get In Touch
             </button>
+            </Link>
           </div>
         </div>
 

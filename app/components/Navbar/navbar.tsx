@@ -111,7 +111,7 @@ const Header: React.FC = () => {
 
           {/* Call Button */}
           <Link
-            href="tel:+2330000000000"
+            href="https://apps.apple.com/"
             className="hidden md:flex bg-orange-500 text-white rounded-full px-4 py-2 items-center space-x-2 hover:bg-orange-600 transition text-sm lg:text-base"
           >
             {/* <Image
@@ -121,7 +121,7 @@ const Header: React.FC = () => {
               width={20}
               height={20}
             /> */}
-            <span>Join Wishlist</span>
+            <span>Download App</span>
           </Link>
 
           {/* Mobile Menu Button */}
