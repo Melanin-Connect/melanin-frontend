@@ -9,7 +9,7 @@ import heading from "@/public/assets/heading.png";
 import SVG3 from "@/public/assets/Group.png";
 import Buttet from "@/public/assets/bullet.png";
 import Video from "@/public/assets/video-1.jpg.png";
-import play from "@/public/assets/Background.png";
+// import play from "@/public/assets/Background.png";
 
 const StatsSection: React.FC = () => {
   return (
