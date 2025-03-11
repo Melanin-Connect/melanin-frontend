@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar/navbar";
 import Footer from "./components/Footer/footer";
 
 export const metadata: Metadata = {
-  title: "melanin|connect",
+  title: "Melanin Connect",
   description:
     "Melanin Connect is a pioneering global digital platform originating from Ghana, now connecting businesses across five additional countries.",
 };
