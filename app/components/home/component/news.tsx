@@ -14,7 +14,7 @@ const TipsAndAdvice: React.FC = () => {
       title: "How to Build a Successful Startup",
       subtitle: "Branding - December 13, 2022",
       description:
-        "Lorem ipsum estibulum blandit libero erisque in mauris ut malesuada. Ute lit ero at mauris condimmanec.",
+        "Starting a successful startup requires a strong vision, market research, and a scalable business model. Focus on solving real problems, building a strong team, and iterating based on user feedback. Funding, branding, and marketing strategies also play a crucial role in long-term growth.",
       image: Blog1,
     },
     {
@@ -22,7 +22,7 @@ const TipsAndAdvice: React.FC = () => {
       title: "10 Design Tips for Better Branding",
       subtitle: "Branding - December 13, 2022",
       description:
-        "Lorem ipsum estibulum blandit libero erisque in mauris ut malesuada. Ute lit ero at mauris condimmanec.",
+        "Effective branding goes beyond a logo—it’s about consistency, storytelling, and emotional connection. Use a cohesive color palette, clear typography, and compelling visuals to make your brand memorable. Simplicity, adaptability, and customer-centric design are key to building trust and recognition.",
       image: Blog2,
     },
     {
@@ -30,7 +30,7 @@ const TipsAndAdvice: React.FC = () => {
       title: "How to Master Digital Marketing",
       subtitle: "Branding - December 13, 2022",
       description:
-        "Lorem ipsum estibulum blandit libero erisque in mauris ut malesuada. Ute lit ero at mauris condimmanec.",
+        "Digital marketing is all about reaching the right audience through SEO, social media, content marketing, and paid ads. Mastering these channels requires understanding customer behavior, leveraging data analytics, and optimizing campaigns for engagement and conversions.",
       image: Blog3,
     },
   ];
