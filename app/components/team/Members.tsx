@@ -5,7 +5,6 @@ import Team1 from "@/public/assets/mate.png";
 import Team2 from "@/public/assets/mate1.png";
 import Team3 from "@/public/assets/mate2.png";
 import Team4 from "@/public/assets/mate3.png";
-import HoverImage from "@/public/assets/hover.png";
 
 const TeamMembers = () => {
   const members = [
