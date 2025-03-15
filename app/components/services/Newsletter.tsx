@@ -27,7 +27,7 @@ const Newsletter = () => {
       </div>
 
       {/* Form */}
-      <form className="relative z-10 mt-8 flex flex-col md:flex-row items-center justify-center gap-4 px-4">
+      <form className="relative z-10 mt-8 text-black flex flex-col md:flex-row items-center justify-center gap-4 px-4">
         {/* Name Input */}
         <div className="relative w-full md:w-1/4">
           <input

@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
         objectFit="cover"
         className="absolute inset-0 z-0 md:block hidden"
       />
-
+  
       {/* Text and Button Section */}
       <div className="relative z-10 max-w-5xl  mx-auto h-full flex flex-col  items-center justify-center ml-50 px-6 lg:px-12 text-white bg-white md:bg-transparent p-6 md:p-0">
         <h6 className="text-sm font-semibold sm:text-white text-black uppercase tracking-widest text-black mb-4">
