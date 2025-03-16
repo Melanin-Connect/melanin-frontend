@@ -20,7 +20,7 @@ const Benefits: React.FC = () => {
         <h2 className="text-2xl font-bold mb-6 leading-tight">
           GET FREE <span className="text-orange-500">CONSULTATION</span> WITH OUR AGENT
         </h2>
-       <Link href= "/contac">
+       <Link href= "/contact">
        <button className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-6 rounded-md font-medium transition">
           Contact us
         </button></Link>
