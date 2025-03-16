@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import ContactUs from "@/public/assets/contact us.png";
+import Link from "next/link";
 
 const Contact: React.FC = () => {
   return (
-    <div className="relative w-full h-[463px] bg-black flex items-center justify-center rounded-2xl overflow-hidden">
+    <div className="relative w-full h-[463px] bg-black flex items-center justify-center rounded-2xl overflow-hidden p-6">
       {/* Background Image */}
       <Image
         src={ContactUs}
@@ -15,19 +16,24 @@ const Contact: React.FC = () => {
       />
 
       {/* Text and Button Section */}
-      <div className="relative z-10 text-center text-white">
-        <h6 className="text-sm font-semibold uppercase tracking-widest text-white mb-4">
-          WE OFFER BEST SOLUTIONS
+      <div className="relative z-10 text-center text-white max-w-xl">
+        <h6 className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-white mb-4">
+          We Offer Best Solutions
         </h6>
-        <p className="text-2xl lg:text-3xl font-bold leading-snug max-w-lg mx-auto mb-6">
+        <p className="text-xl sm:text-2xl lg:text-3xl font-bold leading-snug mb-6">
           Let us be a part of your <br />
           next project
         </p>
 
         {/* Button */}
-        <button className="bg-[#303360] text-white py-3 px-8 rounded-full text-lg hover:opacity-90 transition">
-          Contact Us
-        </button>
+        <Link href="/contact">
+          <button
+            className="bg-[#303360] text-white py-3 px-6 sm:px-8 rounded-full text-base sm:text-lg hover:opacity-90 transition"
+            aria-label="Contact Us"
+          >
+            Contact Us
+          </button>
+        </Link>
       </div>
     </div>
   );
