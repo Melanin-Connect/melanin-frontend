@@ -21,6 +21,8 @@ const logos = [
 const LogoSection: React.FC = () => {
   return (
     <section className="bg-white  py-16">
+      <h1 className="text-center pb-10 font-bold">Trusted by Top <span className="underline decoration-black-500">Global Business Organizations</span>
+      </h1>
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-wrap justify-center items-center gap-6">
           {logos.map((logo, index) => (

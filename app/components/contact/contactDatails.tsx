@@ -12,7 +12,8 @@ const ContactDetails = () => (
         {
           icon: Call,
           title: "Physical Address",
-          description: "30 Onyanklle Street,\n Accra - Ghana",
+          // description: "30 Onyanklle Street,\n Accra - Ghana",
+          description: "71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ"
         },
         {
           icon: Location,
