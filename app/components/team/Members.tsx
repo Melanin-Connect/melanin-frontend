@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import { FaXTwitter, FaFacebookF, FaInstagram } from "react-icons/fa6";
-import Team1 from "@/public/assets/mate.png";
+import Team1 from "@/public/assets/mate.jpg";
 import Team2 from "@/public/assets/mate1.png";
 import Team3 from "@/public/assets/mate2.png";
-import Team4 from "@/public/assets/mate3.png";
+import Team4 from "@/public/assets/mate3.jpg";
 
 const TeamMembers = () => {
   const members = [
