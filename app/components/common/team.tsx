@@ -13,7 +13,7 @@ const TeamMembers: React.FC = () => {
       image: Team1,
     },
     {
-      name: "Brenda Anlex",
+      name: "Anita",
       role: "Marketing",
       image: Team2,
     },
