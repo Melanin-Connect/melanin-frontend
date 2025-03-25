@@ -1,16 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import { FaXTwitter, FaFacebookF, FaInstagram } from "react-icons/fa6";
-import Team1 from "@/public/assets/mate.jpg";
+import Team1 from "@/public/assets/mate3.jpg";
 import Team2 from "@/public/assets/mate1.png";
 import Team3 from "@/public/assets/mate2.png";
-import Team4 from "@/public/assets/mate3.jpg";
+import Team4 from "@/public/assets/mate.jpg";
 
 const TeamMembers = () => {
   const members = [
     {
-      name: "Jhan Wick",
-      role: "Product Designer",
+      name: "Edward Owusu",
+      role: "CEO & Founder",
       img: Team1,
       x: "https://twitter.com/jhanwick",
       facebook: "https://facebook.com/jhanwick",
@@ -33,8 +33,9 @@ const TeamMembers = () => {
       instagram: "https://instagram.com/jhanwick",
     },
     {
-      name: "Jhan Wick",
-      role: "Product Designer",
+     
+      name: "Godfred Tenkorang",
+      role: "Backend Developer",
       img: Team4,
       x: "https://twitter.com/jhanwick",
       facebook: "https://facebook.com/jhanwick",
@@ -54,13 +55,17 @@ const TeamMembers = () => {
             >
               {/* Image Section */}
               <div className="relative w-full h-80 group overflow-hidden rounded-lg">
+              <div className="mx-auto rounded-[30%] overflow-hidden mb-4">
                 <Image
+
                   src={member.img}
                   alt={member.name}
                   layout="fill"
-                  objectFit="cover"
+                
+                  objectFit="cover mt-15px"
                   className="rounded-lg transition-transform duration-300 transform group-hover:scale-105"
                 />
+                </ div>
                 <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"></div>
               </div>
               {/* Text Section */}
