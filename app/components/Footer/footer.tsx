@@ -90,19 +90,19 @@ const Footer: React.FC = () => {
               {[
                 {
                   name: "AI-Powered Virtual Assistants & Chatbot",
-                  link: "/ai-assistants",
+                  link: "/services",
                 },
                 {
                   name: "Predictive Analytics & Sales Forecasting",
-                  link: "/predictive-analytics",
+                  link: "/service",
                 },
                 {
                   name: "AI-Powered Social Networking Platform",
-                  link: "/ai-social-network",
+                  link: "/service",
                 },
                 {
                   name: "Blockchain-Enabled Payment Systems",
-                  link: "/blockchain-payments",
+                  link: "/service",
                 },
               ].map((item) => (
                 <li key={item.name}>

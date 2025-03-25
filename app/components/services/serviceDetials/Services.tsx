@@ -27,7 +27,7 @@ const Services: React.FC = () => {
       </div>
 
       {/* Contact Info - Hidden on Small Screens */}
-      <div className="bg-white rounded-lg shadow-md p-6 hidden lg:block">
+      <div className="bg-white rounded-lg shadow-md p-6 hidden lg:block">  
         <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
         <p>30 Onyankle Street, Accra</p>
         <p>+233 200 000 000</p>

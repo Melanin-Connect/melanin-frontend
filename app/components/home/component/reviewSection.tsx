@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import Gradient1 from "@/public/assets/Gradient1.png";
 import Image from "next/image";
