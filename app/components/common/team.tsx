@@ -1,7 +1,7 @@
 import React from "react";
 import Team1 from "@/public/assets/mate3.jpg";
-import Team2 from "@/public/assets/avatar1.png"
-import Team3 from "@/public/assets/avatar2.png";
+import Team2 from "@/public/assets/mate.jpg"
+import Team3 from "@/public/assets/mate.jpg";
 import Team4 from "@/public/assets/mate.jpg"
 import Image from "next/image";
 
@@ -32,10 +32,10 @@ const TeamMembers: React.FC = () => {
   return (
     <div className="bg-white py-16 px-8">
       <div className="text-center mb-12">
-        <p className="text-sm uppercase text-orange-500 font-bold tracking-widest">
+        <p className="text-sm uppercase text-orange-500 mb-2 font-bold tracking-widest">
           Our Team
         </p>
-        <h2 className="text-4xl font-bold text-gray-900">Team Members</h2>
+        <h2 className="text-4xl font-bold text-gray-900">Meet the Founder</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
         {team.map((member) => (
