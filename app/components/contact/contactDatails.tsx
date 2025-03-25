@@ -23,7 +23,7 @@ const ContactDetails = () => (
         {
           icon: Envelop,
           title: "Email Address",
-          description: "info@melaninconnect.net\ncontact@melaninconnect.net",
+          description: "info@melaninconnect.xyz\ncontact@melaninconnect.xyz",
         },
         {
           icon: Clock,
