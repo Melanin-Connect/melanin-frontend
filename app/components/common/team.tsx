@@ -1,15 +1,15 @@
 import React from "react";
-import Team1 from "@/public/assets/avatar.png";
+import Team1 from "@/public/assets/mate3.jpg";
 import Team2 from "@/public/assets/avatar1.png"
 import Team3 from "@/public/assets/avatar2.png";
-import Team4 from "@/public/assets/avatar3.png"
+import Team4 from "@/public/assets/mate.jpg"
 import Image from "next/image";
 
 const TeamMembers: React.FC = () => {
   const team = [
     {
-      name: "Jhon Wick",
-      role: "Product Designer",
+      name: "Edward Owusu",
+      role: "CEO & Founder",
       image: Team1,
     },
     {
@@ -18,13 +18,13 @@ const TeamMembers: React.FC = () => {
       image: Team2,
     },
     {
-      name: "Jonath Dark",
-      role: "Support Desk",
+      name: "Alex Njoya",
+      role: "Software Developer",
       image: Team3,
     },
     {
-      name: "Anna Jony",
-      role: "Marketing",
+      name: "Godfred Tenkorang",
+      role: "Backend Developer",
       image: Team4,
     },
   ];
@@ -46,7 +46,7 @@ const TeamMembers: React.FC = () => {
                 alt={member.name}
                 width={160}
                 height={160}
-                className="object-cover w-full h-full"
+                className=" "
               />
             </div>
             <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
