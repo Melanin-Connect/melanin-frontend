@@ -28,7 +28,7 @@ const ContactDetails = () => (
         {
           icon: Clock,
           title: "Phone Numbers",
-          description: "+233 541 386 626\n+233 000 000 000",
+          description: "+233 000 000 000",
         },
       ].map((detail, index) => (
         <div
