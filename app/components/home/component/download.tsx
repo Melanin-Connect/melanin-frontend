@@ -5,7 +5,7 @@ import { FaApple, FaGooglePlay } from "react-icons/fa";
 
 const Contact: React.FC = () => {
   return (
-    <div className="w-full h-auto py-12 mt-20 px-4 sm:px-6 lg:px-12 text-black flex flex-col items-center justify-center lg:flex-row lg:items-center lg:justify-center">
+    <div id="download" className="w-full h-auto py-12 mt-20 px-4 sm:px-6 lg:px-12 text-black flex flex-col items-center justify-center lg:flex-row lg:items-center lg:justify-center">
       {/* Text and Button Section */}
       <div className="relative z-10 max-w-5xl w-full text-center lg:text-center">
         

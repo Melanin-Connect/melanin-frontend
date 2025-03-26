@@ -110,8 +110,8 @@ const Header: React.FC = () => {
           </div>
 
           {/* Call Button */}
-          <Link
-            href="https://apps.apple.com/"
+         
+           <Link href="/#downloads"
             className="hidden md:flex bg-orange-500 text-white rounded-full px-4 py-2 items-center space-x-2 hover:bg-orange-600 transition text-sm lg:text-base"
           >
             {/* <Image

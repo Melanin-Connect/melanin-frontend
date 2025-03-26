@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
         <h6 className="text-sm font-semibold sm:text-white text-black uppercase tracking-widest text-black mb-4">
           Earn Rewards and Points
         </h6>
-        <p className=" sm:items-start sm:text-white text-black items-center justify-center sm:justify-start sm:text-sm text-2xl lg:text-3xl font-bold leading-snug max-w-3xl mb-6 text-center md:text-left text-black">
+        <p className=" sm:items-start sm:text-white items-center justify-center sm:justify-start sm:text-sm text-2xl lg:text-3xl font-bold leading-snug max-w-3xl mb-6 text-center md:text-left text-black">
           Participate in community activities, complete tasks, and get paid for
           your efforts. Turn your engagement into earnings today!
         </p>
@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
       <Link href="/contact" >
       
        {/* Button */}
-       <button className="bg-orange-500 text-white py-3 px-8 rounded-full text-lg hover:opacity-90 transition">
+       <button id="downloads" className="bg-orange-500 text-white py-3 px-8 rounded-full text-lg hover:opacity-90 transition">
           Contact Us
         </button>
         </Link>

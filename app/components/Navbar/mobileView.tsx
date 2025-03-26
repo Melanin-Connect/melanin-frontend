@@ -83,8 +83,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
           </Link>
 
           {/* Call Button */}
-          <Link
-            href="https://apps.apple.com/"
+         <Link href="/#downloads"
             className="flex bg-orange-500 text-white rounded-full px-4 py-2 items-center space-x-2 hover:bg-orange-600 transition"
             onClick={toggleMenu} // Close menu on click
           >
