@@ -9,6 +9,7 @@ import Soludtion from "./component/solution"
 import TipsAdvice from "./component/news"
 import Partners from '../common/partners'
 import Contacts  from "./component/contact"
+import Downloads  from "./component/download"
 
 
 const Index: React.FC = () => {
@@ -27,6 +28,7 @@ const Index: React.FC = () => {
       <Soludtion  />
       <TipsAdvice />
       <Contacts />  
+      <Downloads />
       <Partners />
       </div>
     

@@ -1,7 +1,7 @@
 import React from "react";
 import Team1 from "@/public/assets/mate3.jpg";
-import Team2 from "@/public/assets/mate.jpg"
-import Team3 from "@/public/assets/mate.jpg";
+import Team2 from "@/public/assets/avatar.png"
+import Team3 from "@/public/assets/avatar1.png";
 import Team4 from "@/public/assets/mate.jpg"
 import Image from "next/image";
 
