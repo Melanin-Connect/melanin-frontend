@@ -1,23 +1,23 @@
 import React from "react";
 import Image from "next/image";
 import { FaXTwitter, FaFacebookF, FaInstagram } from "react-icons/fa6";
-import Team1 from "@/public/assets/mate3.jpg";
+// import Team1 from "@/public/assets/mate3.jpg";
 import Team2 from "@/public/assets/mate1.png";
 import Team3 from "@/public/assets/mate2.png";
 import Team4 from "@/public/assets/mate.jpg";
 
 const TeamMembers = () => {
   const members = [
+    // {
+    //   name: "Edward Owusu",
+    //   role: "CEO & Founder",
+    //   img: Team1,
+    //   x: "https://twitter.com/jhanwick",
+    //   facebook: "https://facebook.com/jhanwick",
+    //   instagram: "https://instagram.com/jhanwick",
+    // },
     {
-      name: "Edward Owusu",
-      role: "CEO & Founder",
-      img: Team1,
-      x: "https://twitter.com/jhanwick",
-      facebook: "https://facebook.com/jhanwick",
-      instagram: "https://instagram.com/jhanwick",
-    },
-    {
-      name: "Jhan Wick",
+      name: "Aniter",
       role: "Product Designer",
       img: Team2,
       x: "https://twitter.com/jhanwick",
@@ -25,8 +25,8 @@ const TeamMembers = () => {
       instagram: "https://instagram.com/jhanwick",
     },
     {
-      name: "Jhan Wick",
-      role: "Product Designer",
+      name: "Alex Njoya",
+      role: "Software Developer",
       img: Team3,
       x: "https://twitter.com/jhanwick",
       facebook: "https://facebook.com/jhanwick",

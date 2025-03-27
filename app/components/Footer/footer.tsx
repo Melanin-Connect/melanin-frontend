@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
                   height={20}
                   className="flex-shrink-0"
                 />
-                <span className="text-sm">30 Onyankle Street</span>
+                <span className="text-sm">71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
                 <Image
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
                   height={20}
                   className="flex-shrink-0"
                 />
-                <span className="text-sm">info@melaninconnect.net</span>
+                <span className="text-sm">info@melaninconnect.xyz</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
                 <Image
@@ -134,7 +134,7 @@ const Footer: React.FC = () => {
                   href="tel:+233541386626"
                   className="text-lg font-bold text-orange-500 hover:text-orange-400 transition-colors"
                 >
-                  +233 541 386 626
+                  +233 000000
                 </Link>
               </div>
             </div>
@@ -154,7 +154,7 @@ const Footer: React.FC = () => {
                   href="mailto:info@melaninconnect.net"
                   className="text-lg font-bold text-orange-500 hover:text-orange-400 transition-colors"
                 >
-                  info@melaninconnect.net
+                  info@melaninconnect.xyz
                 </Link>
               </div>
             </div>

@@ -31,7 +31,7 @@ const VisitUsSection = () => {
             {
               icon: Call,
               title: "Physical Address",
-              description: "30 Onyanklle Street, \n Accra - Ghana",
+              description: "71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ",
             },
             {
               icon: Location,
@@ -42,12 +42,12 @@ const VisitUsSection = () => {
               icon: Envelop,
               title: "Email Address",
               description:
-                "info@melaninconnect.net\ncontact@melaninconnect.net",
+                "info@melaninconnect.xyz\ncontact@melaninconnect.xyz",
             },
             {
               icon: Clock,
               title: "Phone Numbers",
-              description: "+233 541 386 626\n+233 000 000 000",
+              description: "+233 000 000 000",
             },
           ].map((detail, index) => (
             <div
