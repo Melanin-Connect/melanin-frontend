@@ -44,7 +44,7 @@ const HelpContact: React.FC = () => {
           />
           <span className="font-semibold">Email us:</span>
         </li>
-        <span className="block ml-8">info@melaninconnect.net</span>
+        <span className="block ml-8">info@melaninconnect.xyz</span>
       </ul>
     </div>
   );

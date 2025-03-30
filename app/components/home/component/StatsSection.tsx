@@ -4,7 +4,6 @@ import SVG from "@/public/assets/SVG.png";
 import SVG1 from "@/public/assets/SVG (1).png";
 import SVG2 from "@/public/assets/SVG (2).png";
 import Man from "@/public/assets/mate3.jpg";
-import sign from "@/public/assets/sign.png";
 import heading from "@/public/assets/heading.png";
 import SVG3 from "@/public/assets/Group.png";
 import Buttet from "@/public/assets/bullet.png";
@@ -76,15 +75,9 @@ const StatsSection: React.FC = () => {
             />
             <div className="ml-2 md:ml-4">
               <p className="text-gray-900 font-semibold">CEO & Co-founder</p>
-              <p className="text-gray-500">Edward Owusu <br /> Melanin Connect</p>
+              <p className="text-gray-500">Edward Owusu </p>
             </div>
-            <Image
-              src={sign}
-              width={80}
-              height={80}
-              alt="Signature"
-              className="ml-4 md:ml-6"
-            />
+          
           </div>
         </div>
 
