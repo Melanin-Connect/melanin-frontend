@@ -13,7 +13,7 @@ const ServicesPage: React.FC = () => {
       <WorkingProcess />
    
     </div>
-       <Newsletter />
+       <Newsletter /> 
     </section>
   );
 };

@@ -6,7 +6,7 @@ import Index from "../components/team/Index";
 const page = () => {
   return (
     <div>
-      <Breadcrumb title="Professional Our Team" />
+      <Breadcrumb title=" Our Team" />
       <Index />
 
     </div>
