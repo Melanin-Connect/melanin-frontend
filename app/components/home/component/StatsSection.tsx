@@ -74,7 +74,7 @@ const StatsSection: React.FC = () => {
               className="rounded-full"
             />
             <div className="ml-2 md:ml-4">
-              <p className="text-gray-900 font-semibold">CEO & Co-founder</p>
+              <p className="text-gray-900 font-semibold">CEO & Founder</p>
               <p className="text-gray-500">Edward Owusu </p>
             </div>
           
