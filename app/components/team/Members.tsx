@@ -17,7 +17,7 @@ const TeamMembers = () => {
 
   return (
     <section className="bg-gray-100 text-black py-16">
-        <h2 className="text-3xl font-bold text-center">Team the Founder</h2>
+        <h2 className="text-3xl font-bold text-center">Meet the Founder</h2>
         <div className="bg-gray-100 text-black py-16 flex items-center justify-center min-h-screen">
       <div className="bg-white rounded-lg p-8 border lg:border-gray-100 lg:bg-gray-50 border-gray-200 w-full sm:w-3/4 md:w-1/2 lg:w-1/2">
         <div className="relative w-full h-80 group overflow-hidden flex items-center justify-center">
