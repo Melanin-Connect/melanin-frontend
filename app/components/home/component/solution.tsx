@@ -31,7 +31,7 @@ const SolutionsSection: React.FC = () => {
       description:
         "Implement secure and transparent blockchain-based solutions for payments and transactions, ensuring efficiency and trust in your financial processes.",
       image: Container5, // Image for this tab
-    },d
+    },
   };
 
   return (
