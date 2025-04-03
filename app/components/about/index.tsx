@@ -1,6 +1,6 @@
 import React from "react";
 import Breadcrumb from "../common/Breadcrumb";
-import Team from "../common/team";
+// import Team from "../common/team";
 import Partners from "../common/partners";
 import TestimonialSection from "./TestimonialSection";
 import BusinessModelSection from "./BusinessModelSection";
@@ -17,7 +17,7 @@ const index = () => {
        
         <BusinessModelSection />
         <Hero />
-        <Team />
+        {/* <Team /> */}
         <BusinessStatsSection />
         <FeaturesSection />
         <FAQSection />
