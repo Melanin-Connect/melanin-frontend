@@ -2,7 +2,6 @@
 'use client'
 import React, { useState } from "react";
 import Image from "next/image";
-import Business from "@/public/assets/business.png";
 import Link from "next/link";
 
 const services = [
@@ -88,7 +87,9 @@ const BusinessServices: React.FC = () => {
         </div>
         <div className="flex justify-center hidden lg:flex">
           <Image
-            src={Business}
+            src="https://res.cloudinary.com/ecosheane/image/upload/v1744531876/image_aplplc.png"
+            width={200}
+            height={200} 
             alt="business service"
             className="lg:w-[350px] lg:h-[300px] w-[100%] h-auto"
           />

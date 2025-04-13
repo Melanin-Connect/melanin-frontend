@@ -1,11 +1,5 @@
-// components/HeroSection.tsx
 import Image from "next/image";
 import Link from "next/link";
-import heroPhone from "@/public/assets/hero-mobil.png";
-import heroIcon from "@/public/assets/hero-icon.png";
-import herShape from "@/public/assets/hero-shaps.png";
-import Images from "@/public/assets/imgs.png";
-import Gradient from "@/public/assets/gradient.png";
 
 const HeroSection = () => {
   return (
@@ -16,7 +10,7 @@ const HeroSection = () => {
             <Image
               width={100}
               height={100}
-              src={herShape}
+              src="https://res.cloudinary.com/ecosheane/image/upload/v1744531875/hero-shaps_n9mq8b.png"
               alt="Background Shape"
               className="absolute inset-[-10] top-[400px] left-[450px] hidden lg:block"
             />
@@ -50,7 +44,7 @@ const HeroSection = () => {
           <div className="lg:w-1/2 mt-40 lg:mt-0 relative">
             <div className="absolute inset-1 -top-20 -right-20 hidden lg:block  justify-center">
               <Image
-                src={Gradient}
+                src=  "https://res.cloudinary.com/ecosheane/image/upload/v1744531871/gradient_w5mwfr.png"
                 alt="hero"
                 width={900}
                 height={563.16}
@@ -58,7 +52,7 @@ const HeroSection = () => {
               />
               <div className="absolute px-10 bottom-[-50px] left-20 bg-white p-4 rounded-full shadow-lg shadow-orange-500/20 flex items-center">
                 <Image
-                  src={Images}
+                  src="https://res.cloudinary.com/ecosheane/image/upload/v1744531880/imgs_jlcdwz.png"
                   width={80}
                   height={80}
                   alt="User"
@@ -72,14 +66,14 @@ const HeroSection = () => {
             <div className="relative mt-10 lg:mt-0 flex items-center justify-center">
               <div className="relative w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] mx-auto">
                 <Image
-                  src={heroPhone}
+                  src= "https://res.cloudinary.com/ecosheane/image/upload/v1744531875/hero-mobil_g0knzf.png"
                   width={678}
                   height={681}
                   alt="Hero"
                   className="absolute top-[-50px] lg:top-[-100px] right-[-20px] lg:right-[40px]"
                 />
                 <Image
-                  src={heroIcon}
+                  src= "https://res.cloudinary.com/ecosheane/image/upload/v1744531874/hero-icon_ezrt7c.png"
                   width={700}
                   height={800}
                   alt="Hero"

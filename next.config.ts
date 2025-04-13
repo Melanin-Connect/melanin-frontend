@@ -5,7 +5,7 @@ const nextConfig = {
   reactStrictMode: true,
 
   images: {
-    domains: ['melaninconnect.xyz'], // Add external domains if needed
+    domains: ['melaninconnect.xyz', 'res.cloudinary.com'], // Add external domains if needed
     unoptimized: false, // This disables Next.js image optimization
   },
   // Required for Docker builds

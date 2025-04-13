@@ -1,13 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import { FaXTwitter, FaFacebookF, FaInstagram } from "react-icons/fa6";
-import Team1 from "@/public/assets/mate3.jpg";
 
 const TeamMembers = () => {
   const member = {
     name: "Edward Owusu",
     role: "CEO & Founder",
-    img: Team1,
     description:
       "A highly skilled digital media strategist with extensive experience in advertising, social media management, mobile applications, content creation, and graphic design. Adept at crafting and executing effective advertising strategies that drive engagement and brand growth. Experienced in managing the full project lifecycle—from strategic planning and team resourcing to performance monitoring and the timely delivery of high-quality outputs. Possesses excellent communication skills, fostering strong leadership among colleagues and building valuable relationships with clients and stakeholders across all professional levels.",
     x: "https://twitter.com/jhanwick",
@@ -23,7 +21,7 @@ const TeamMembers = () => {
         <div className="relative w-full h-80 group overflow-hidden flex items-center justify-center">
           <div className="mx-auto rounded-full overflow-hidden mb-4 w-40 h-40">
             <Image
-              src={member.img}
+              src= "https://res.cloudinary.com/ecosheane/image/upload/v1744531881/mate3_rkwrhq.jpg"
               alt={member.name}
               width={160}
               height={160}
