@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section className="relative bg-white overflow-hidden ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 ">
         <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center">
-          <div className="lg:w-1/2 text-center lg:text-left relative">
+          <div className="lg:w-1/2 text-center  lg:text-left relative">
             <Image
               width={100}
               height={100}

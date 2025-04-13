@@ -1,7 +1,5 @@
 import React from "react";
-import heading from "@/public/assets/heading.png";
 import Image from "next/image";
-import LinkImage from "@/public/assets/Border.png";
 import Link from "next/link";
 
 const TipsAndAdvice: React.FC = () => {
@@ -38,9 +36,9 @@ const TipsAndAdvice: React.FC = () => {
         {/* Heading Section */}
         <div className="text-center mb-12">
           <Image
-            src={heading}
-            width={200}
-            height={200}
+            src="https://res.cloudinary.com/ecosheane/image/upload/v1744531873/heading_xfhov1.png"
+            width={20}
+            height={20}
             alt="Heading Icon"
             className="mx-auto"
           />
@@ -91,7 +89,7 @@ const TipsAndAdvice: React.FC = () => {
               <div className="hidden md:flex items-center justify-center ml-auto">
                 <div className="w-8 h-8 border-2 ml-20 border-orange-500 rounded-full flex items-center justify-center">
                   <Image
-                    src={LinkImage}
+                    src= "https://res.cloudinary.com/ecosheane/image/upload/v1744531864/Border_v0qcsk.png"
                     alt="Link Icon"
                     width={12}
                     height={12}
