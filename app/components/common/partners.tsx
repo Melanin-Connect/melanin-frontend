@@ -2,24 +2,14 @@
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 
-// Note: In a real implementation, you would import actual images
-// The imports below are placeholders for the example
-import forbs from "@/public/logos/forbes.png";
-import gosport from "@/public/logos/Vector (1).png";
-import sodicam from "@/public/logos/Vector (2).png";
-import daignostics from "@/public/logos/Vector (3).png";
-import itv from "@/public/logos/itv.png";
-import nrik from "@/public/logos/rik.png";
-import fiba from "@/public/logos/Vector.png";
-
 const logos = [
-  { src: forbs, alt: "Forbes", width: 144, height: 80 },
-  { src: gosport, alt: "Go Sport", width: 144, height: 80 },
-  { src: sodicam, alt: "Sodicam", width: 144, height: 80 },
-  { src: daignostics, alt: "Diagnostics", width: 144, height: 80 },
-  { src: itv, alt: "ITV", width: 144, height: 80 },
-  { src: nrik, alt: "Nrik", width: 144, height: 80 },
-  { src: fiba, alt: "FIBA", width: 144, height: 80 },
+  { src: "https://res.cloudinary.com/ecosheane/image/upload/v1744531899/forbes_t6od9q.png", alt: "Forbes", width: 144, height: 80 },
+  { src: "https://res.cloudinary.com/ecosheane/image/upload/v1744531900/itv_putzkv.png", alt: "Go Sport", width: 144, height: 80 },
+  { src: "https://res.cloudinary.com/ecosheane/image/upload/v1744531900/Vector_1_l3dmz7.png", alt: "Sodicam", width: 144, height: 80 },
+  { src: "https://res.cloudinary.com/ecosheane/image/upload/v1744531900/Vector_gsneui.png", alt: "Diagnostics", width: 144, height: 80 },
+  { src: "https://res.cloudinary.com/ecosheane/image/upload/v1744531900/Vector_2_sozlq1.png", alt: "ITV", width: 144, height: 80 },
+  { src: "https://res.cloudinary.com/ecosheane/image/upload/v1744531900/rik_zgfswz.png", alt: "Nrik", width: 144, height: 80 },
+  { src: "https://res.cloudinary.com/ecosheane/image/upload/v1744531900/Vector_3_vawtzk.png", alt: "FIBA", width: 144, height: 80 },
 ];
 
 const LogoSection: React.FC = () => {
@@ -90,7 +80,7 @@ const LogoSection: React.FC = () => {
               className="w-36 h-20 flex items-center justify-center bg-transparent border border-gray-500 rounded-full p-4 mx-3 flex-shrink-0"
             >
               <Image
-                src={typeof logo.src === 'string' ? logo.src : logo.src.src}
+                src={typeof logo.src === 'string' ? logo.src : logo.src}
                 alt={logo.alt}
                 width={logo.width}
                 height={logo.height}
