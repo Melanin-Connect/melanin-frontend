@@ -39,8 +39,8 @@ const TipsAndAdvice: React.FC = () => {
         <div className="text-center mb-12">
           <Image
             src={heading}
-            width={40}
-            height={78}
+            width={200}
+            height={200}
             alt="Heading Icon"
             className="mx-auto"
           />
@@ -59,8 +59,8 @@ const TipsAndAdvice: React.FC = () => {
               {/* Image Section */}
               <div className="flex-shrink-0 w-full md:w-64 h-auto md:h-40">
                 <Image
-                  width={40}
-                  height={78}
+                  width={200}
+                  height={200}
                   src={post.image}
                   alt={post.title}
                   className="w-full h-full object-cover rounded-lg"
