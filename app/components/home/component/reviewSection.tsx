@@ -1,12 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Gradient1 from "@/public/assets/Gradient1.png";
 import Image from "next/image";
-import avatar1 from "@/public/assets/avatar.png";
-import avatar2 from "@/public/assets/avatar1.png";
-import avatar3 from "@/public/assets/avatar2.png";
-import avatar4 from "@/public/assets/avatar3.png";
-import Symbol from "@/public/assets/Symbol.png";
 
 const ReviewSection: React.FC = () => {
   // Define reviews data
@@ -39,6 +33,10 @@ const ReviewSection: React.FC = () => {
 
   // State for the selected review
   const [selectedReview, setSelectedReview] = useState(0);
+  const avatar1 ="https://res.cloudinary.com/ecosheane/image/upload/v1744531862/avatar1_lo3ksk.png";
+  const avatar2 ="https://res.cloudinary.com/ecosheane/image/upload/v1744531861/avatar2_e9s5ut.png";
+  const avatar3 ="https://res.cloudinary.com/ecosheane/image/upload/v1744531861/avatar3_nxy2kk.png";
+  const avatar4 ="https://res.cloudinary.com/ecosheane/image/upload/v1744531862/avatar_gsyofl.png";
 
   return (
     <div className="flex flex-col lg:flex-row items-center bg-white h-auto lg:h-[500px] relative">
@@ -46,7 +44,7 @@ const ReviewSection: React.FC = () => {
       <div className="flex-1 relative w-full lg:w-[298.39px]">
         {/* Gradient Background */}
         <Image
-          src={Gradient1}
+          src="https://res.cloudinary.com/ecosheane/image/upload/v1744531871/Gradient1_nvvuj8.png"
           alt="gradient"
           layout="fill"
           objectFit="cover"
@@ -97,7 +95,7 @@ const ReviewSection: React.FC = () => {
                 (_, index) => (
                   <Image
                     key={index}
-                    src={Symbol}
+                    src="https://res.cloudinary.com/ecosheane/image/upload/v1744531887/Symbol_scoibv.png"
                     alt="star"
                     width={20}
                     height={20}

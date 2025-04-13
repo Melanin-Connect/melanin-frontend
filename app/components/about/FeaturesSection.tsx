@@ -1,8 +1,5 @@
 import React from "react";
-import heading from "@/public/assets/heading.png";
 import Image from "next/image";
-import soludtion from "@/public/assets/solution.png";
-import vector from "@/public/assets/Vector.png";
 
 const FeaturesSection: React.FC = () => {
   return (
@@ -10,7 +7,7 @@ const FeaturesSection: React.FC = () => {
       {/* Heading Section */}
       <div className="text-center mb-8 md:mb-12">
         <Image
-          src={heading}
+          src="https://res.cloudinary.com/ecosheane/image/upload/v1744531873/heading_xfhov1.png"
           width={40}
           height={78}
           alt="Heading Icon"
@@ -31,7 +28,7 @@ const FeaturesSection: React.FC = () => {
         {/* Feature 1 */}
         <div className="bg-white p-6 rounded-3xl shadow-lg text-center">
           <div className="bg-gray-300 w-16 h-16 rounded-full mx-auto mb-4 flex p-3 items-center justify-center">
-            <Image src={vector} alt="" />
+            <Image src="https://res.cloudinary.com/ecosheane/image/upload/v1744531893/Vector_eurlem.png" width={40} height={40}   alt="" />
           </div>
           <h3 className="text-lg font-bold text-[#1F244C] mb-2">
             AI-Powered Virtual Assistants
@@ -44,13 +41,13 @@ const FeaturesSection: React.FC = () => {
 
         {/* Feature 2 */}
         <div className="bg-white p-6">
-          <Image src={soludtion} alt="" className="w-full h-auto" />
+          <Image src="https://res.cloudinary.com/ecosheane/image/upload/v1744531887/solution_djeuyw.png" width={600} height={600} alt="" className="w-full h-auto" />
         </div>
 
         {/* Feature 3 */}
         <div className="bg-white p-6 rounded-3xl shadow-lg text-center">
           <div className="bg-gray-300 w-16 h-16 rounded-full mx-auto mb-4 flex p-3 items-center justify-center">
-            <Image src={vector} alt="" />
+            <Image src= "https://res.cloudinary.com/ecosheane/image/upload/v1744531893/Vector_eurlem.png" width={40} height={40} alt="" />
           </div>
           <h3 className="text-lg font-bold text-[#1F244C] mb-2">
             Predictive Sales Forecasting
@@ -65,7 +62,7 @@ const FeaturesSection: React.FC = () => {
         {/* Feature 4 */}
         <div className="bg-white p-6 mt-10 rounded-3xl shadow-lg text-center">
           <div className="bg-gray-300 w-16 h-16 rounded-full mx-auto mb-4 flex p-3 items-center justify-center">
-            <Image src={vector} alt="" />
+            <Image src= "https://res.cloudinary.com/ecosheane/image/upload/v1744531893/Vector_eurlem.png" width={40} height={40} alt="" />
           </div>
           <h3 className="text-lg font-bold text-[#1F244C] mb-2">
             Instant Global Deposits
@@ -80,7 +77,7 @@ const FeaturesSection: React.FC = () => {
         {/* Feature 5 */}
         <div className="bg-white h-[300px] -mt-10 p-6 rounded-3xl mt-2 shadow-lg text-center">
           <div className="bg-gray-300 w-16 h-16  rounded-full mx-auto mb-4 flex p-3 items-center justify-center">
-            <Image src={vector} alt="" />
+            <Image src="https://res.cloudinary.com/ecosheane/image/upload/v1744531893/Vector_eurlem.png" width={40} height={40} alt="" />
           </div>
           <h3 className="text-lg font-bold text-[#1F244C] mb-2">
             Blockchain Payment Gateways
@@ -94,7 +91,7 @@ const FeaturesSection: React.FC = () => {
         {/* Feature 6 */}
         <div className="bg-white p-6 mt-10 rounded-3xl shadow-lg text-center">
           <div className="bg-gray-300 w-16 h-16 rounded-full mx-auto mb-4 flex p-3 items-center justify-center">
-            <Image src={vector} alt="" />
+            <Image src= "https://res.cloudinary.com/ecosheane/image/upload/v1744531893/Vector_eurlem.png" width={40} height={40} alt="" />
           </div>
           <h3 className="text-lg font-bold text-[#1F244C] mb-2">
             More Innovative Tools

@@ -1,12 +1,6 @@
 'use client'
 import React, { useState } from "react";
 import Image from "next/image";
-import growth from "@/public/assets/growth.png";
-import assistant from "@/public/assets/service.png";
-import productContent from "@/public/assets/service.png";
-import paymentSystems from "@/public/assets/service.png";
-import analytics from "@/public/assets/service.png";
-import socialPlatform from "@/public/assets/service.png";
 import Link from "next/link";
 
 const Services = () => {
@@ -15,31 +9,31 @@ const Services = () => {
       title: "AI-Powered Virtual Assistants & Chatbots",
       description:
         "Our intelligent virtual assistants and chatbots provide real-time, AI-driven customer support, personalized product recommendations, and intuitive interactions that help you engage your customers effectively. Improve customer satisfaction while reducing operational costs.",
-      image: assistant,
+      image: "https://res.cloudinary.com/ecosheane/image/upload/v1744531887/service_hzqb3x.png",
     },
     {
       title: "AI-Generated Product Content",
       description:
         "Streamline your product descriptions with AI-generated, SEO-friendly content tailored to attract customers and improve your search rankings.",
-      image: productContent,
+      image: "https://res.cloudinary.com/ecosheane/image/upload/v1744531887/service_hzqb3x.png",
     },
     {
       title: "Blockchain-Enabled Payment Systems",
       description:
         "Enable secure, fast, and transparent transactions using blockchain technology. Build trust and efficiency in your payment processing.",
-      image: paymentSystems,
+      image: "https://res.cloudinary.com/ecosheane/image/upload/v1744531887/service_hzqb3x.png",
     },
     {
       title: "Predictive Analytics & Sales Forecasting",
       description:
         "Leverage predictive analytics to make data-driven decisions, forecast sales trends, and optimize business strategies for maximum ROI.",
-      image: analytics,
+      image: "https://res.cloudinary.com/ecosheane/image/upload/v1744531887/service_hzqb3x.png",
     },
     {
       title: "AI-Powered Social Networking Platform",
       description:
         "Create engaging social experiences with AI-powered networking platforms that personalize user feeds and foster meaningful connections.",
-      image: socialPlatform,
+      image: "https://res.cloudinary.com/ecosheane/image/upload/v1744531887/service_hzqb3x.png",
     },
   ];
 
@@ -63,7 +57,7 @@ const Services = () => {
           >
             <div className="flex justify-center">
               <Image
-                src={growth}
+                src="https://res.cloudinary.com/ecosheane/image/upload/v1744531871/growth_vjnd9r.png"
                 alt={`${service.title} Illustration`}
                 width={40}
                 height={40}

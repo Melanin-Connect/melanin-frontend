@@ -1,14 +1,7 @@
 import React from "react";
-import Container from "@/public/assets/Container.png";
-import Container1 from "@/public/assets/Container-1.png";
-import Container2 from "@/public/assets/Container-2.png";
-import Container3 from "@/public/assets/Container-3.png";
-import Container4 from "@/public/assets/Container-4.png";
 import { StaticImageData } from "next/image";
-import Link from "next/link"
+import Link from "next/link";
 import Image from "next/image";
-import heading from "@/public/assets/heading.png";
-
 
 // Define the projects array with explicit types
 type Project = {
@@ -18,12 +11,42 @@ type Project = {
 };
 
 const projects: Project[] = [
-  { title: "E-Commerce", year: 2023, image: Container },
-  { title: "Blockchain Payment System", year: 2021, image: Container1 },
-  { title: "Inventory Optimization", year: 2022, image: Container2 },
-  { title: "Web 3.0 Community Platform", year: 2024, image: Container4 },
-  { title: "Product Content for Online Retailer", year: 2023, image: Container3 },
-  { title: "Social Networking Platform", year: 2024, image: Container2 },
+  {
+    title: "E-Commerce",
+    year: 2023,
+    image:
+      "https://res.cloudinary.com/ecosheane/image/upload/v1744531866/Container_xmjr04.png",
+  },
+  {
+    title: "Blockchain Payment System",
+    year: 2021,
+    image:
+      "https://res.cloudinary.com/ecosheane/image/upload/v1744531870/Container-1_r4iykl.png",
+  },
+  {
+    title: "Inventory Optimization",
+    year: 2022,
+    image:
+      "https://res.cloudinary.com/ecosheane/image/upload/v1744531870/Container-2_nvvlon.png",
+  },
+  {
+    title: "Web 3.0 Community Platform",
+    year: 2024,
+    image:
+      "https://res.cloudinary.com/ecosheane/image/upload/v1744531870/Container-4_ypian0.png",
+  },
+  {
+    title: "Product Content for Online Retailer",
+    year: 2023,
+    image:
+      "https://res.cloudinary.com/ecosheane/image/upload/v1744531870/Container-3_odgdib.png",
+  },
+  {
+    title: "Social Networking Platform",
+    year: 2024,
+    image:
+      "https://res.cloudinary.com/ecosheane/image/upload/v1744531866/Container_2_gztc8v.png",
+  },
 ];
 
 const Home: React.FC = () => {
@@ -32,7 +55,7 @@ const Home: React.FC = () => {
       {/* Header Section */}
       <header className="text-center mb-12 px-4">
         <Image
-          src={heading}
+          src="https://res.cloudinary.com/ecosheane/image/upload/v1744531873/heading_xfhov1.png"
           width={40}
           height={78}
           alt="Heading Icon"
@@ -77,11 +100,11 @@ const Home: React.FC = () => {
 
       {/* Call-to-Action Button */}
       <div className="mt-12 mb-16">
-      <Link href="./services" >
-      <button className="bg-orange-500 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-orange-600 shadow-lg transition duration-300">
-          View Our Services
-        </button>
-      </Link>
+        <Link href="./services">
+          <button className="bg-orange-500 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-orange-600 shadow-lg transition duration-300">
+            View Our Services
+          </button>
+        </Link>
       </div>
     </div>
   );

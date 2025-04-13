@@ -1,5 +1,4 @@
 import React from "react";
-
 import Locations from "./Location";
 import ContactDetails from "./contactDatails";
 import MapSection from "./mapsection";

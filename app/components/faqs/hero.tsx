@@ -8,7 +8,7 @@ const hero: React.FC = () => {
       {/* Left - Image Placeholder */}
       <div className="relative w-full h-[300px] md:h-[400px]">
         <Image
-          src={FAQ} // Replace with your actual image path
+          src="https://res.cloudinary.com/ecosheane/image/upload/v1744531870/FAQ_e85uef.png"
           alt="FAQ Illustration"
           layout="fill"
           objectFit="contain"

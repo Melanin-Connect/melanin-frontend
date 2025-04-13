@@ -1,9 +1,6 @@
 import React from "react";
 import heading from "@/public/assets/heading.png";
 import Image from "next/image";
-import Blog1 from "@/public/assets/blog-three-1.jpg.png";
-import Blog2 from "@/public/assets/blog-three-2.jpg.png";
-import Blog3 from "@/public/assets/blog-three-3.jpg.png";
 import LinkImage from "@/public/assets/Border.png";
 import Link from "next/link";
 
@@ -15,7 +12,7 @@ const TipsAndAdvice: React.FC = () => {
       subtitle: "Branding - December 13, 2022",
       description:
         "Starting a successful startup requires a strong vision, market research, and a scalable business model. Focus on solving real problems, building a strong team, and iterating based on user feedback. Funding, branding, and marketing strategies also play a crucial role in long-term growth.",
-      image: Blog1,
+      image: "https://res.cloudinary.com/ecosheane/image/upload/v1744531863/blog-three-1.jpg_omwroa.png",
     },
     {
       id: 2,
@@ -23,7 +20,7 @@ const TipsAndAdvice: React.FC = () => {
       subtitle: "Branding - December 13, 2022",
       description:
         "Effective branding goes beyond a logo—it’s about consistency, storytelling, and emotional connection. Use a cohesive color palette, clear typography, and compelling visuals to make your brand memorable. Simplicity, adaptability, and customer-centric design are key to building trust and recognition.",
-      image: Blog2,
+      image: "https://res.cloudinary.com/ecosheane/image/upload/v1744531863/blog-three-2.jpg_ns6sjo.png",
     },
     {
       id: 3,
@@ -31,7 +28,7 @@ const TipsAndAdvice: React.FC = () => {
       subtitle: "Branding - December 13, 2022",
       description:
         "Digital marketing is all about reaching the right audience through SEO, social media, content marketing, and paid ads. Mastering these channels requires understanding customer behavior, leveraging data analytics, and optimizing campaigns for engagement and conversions.",
-      image: Blog3,
+      image: "https://res.cloudinary.com/ecosheane/image/upload/v1744531864/blog-three-3.jpg_qpygrx.png",
     },
   ];
 
@@ -62,6 +59,8 @@ const TipsAndAdvice: React.FC = () => {
               {/* Image Section */}
               <div className="flex-shrink-0 w-full md:w-64 h-auto md:h-40">
                 <Image
+                  width={40}
+                  height={78}
                   src={post.image}
                   alt={post.title}
                   className="w-full h-full object-cover rounded-lg"

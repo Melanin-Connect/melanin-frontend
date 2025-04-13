@@ -1,5 +1,4 @@
 import React from "react";
-import Gradient1 from "@/public/assets/Gradient1.png";
 import Image from "next/image";
 
 const stat = () => {
@@ -8,7 +7,7 @@ const stat = () => {
     <div className="flex-1 relative w-[298.39px] ">
      
       <Image
-        src={Gradient1}
+        src="https://res.cloudinary.com/ecosheane/image/upload/v1744531871/Gradient1_nvvuj8.png"
         alt="gradient"
         layout="fill"
         objectFit="cover"

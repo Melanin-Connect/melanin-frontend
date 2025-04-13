@@ -2,19 +2,16 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/public/assets/melanin.png";
-import Call from "@/public/assets/call.png";
-import Support from "@/public/assets/support.png";
-import Clock from "@/public/assets/clock.png";
-import Email from "@/public/assets/envelope.png";
-import Location from "@/public/assets/location.png";
-import Facebook from "@/public/assets/facebook.png";
-import Instagram from "@/public/assets/x.png";
-import Twitter from "@/public/assets/ticktok.png";
-import LinkedIn from "@/public/assets/pintress.png";
-import Youtube from "@/public/assets/youtube.png";
+
 
 const Footer: React.FC = () => {
+    const LinkedIn ="https://res.cloudinary.com/ecosheane/image/upload/v1744531893/ticktok_faj76l.png"
+
+
+    const  Youtube ="https://res.cloudinary.com/ecosheane/image/upload/v1744531894/youtube_wndigx.png"
+    const Instagram ="https://res.cloudinary.com/ecosheane/image/upload/v1744531886/pintress_ajsuyj.png"
+    const Facebook ="https://res.cloudinary.com/ecosheane/image/upload/v1744531870/facebook_od2rvv.png"
+    const Twitter = "https://res.cloudinary.com/ecosheane/image/upload/v1744531894/x_fi90iv.png"
   return (
     <footer className="bg-[#303360] text-white">
       {/* Main Footer Content */}
@@ -26,7 +23,7 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
                 <Image
-                  src={Location}
+                  src="https://res.cloudinary.com/ecosheane/image/upload/v1744531880/location_lsplav.png"
                   alt="Location"
                   width={20}
                   height={20}
@@ -36,7 +33,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
                 <Image
-                  src={Email}
+                  src=  "https://res.cloudinary.com/ecosheane/image/upload/v1744531870/envelope_ski8ed.png"
                   alt="Email"
                   width={20}
                   height={20}
@@ -46,7 +43,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
                 <Image
-                  src={Clock}
+                  src="https://res.cloudinary.com/ecosheane/image/upload/v1744531865/clock_zrwjvf.png"
                   alt="Hours"
                   width={20}
                   height={20}
@@ -124,7 +121,7 @@ const Footer: React.FC = () => {
               <p className="text-sm text-gray-300">Have Any Questions?</p>
               <div className="flex items-center space-x-2">
                 <Image
-                  src={Call}
+                  src= "https://res.cloudinary.com/ecosheane/image/upload/v1744531865/call_y8lrpd.png"
                   alt="Phone"
                   width={20}
                   height={20}
@@ -144,7 +141,7 @@ const Footer: React.FC = () => {
               <p className="text-sm text-gray-300">Send us an email</p>
               <div className="flex items-center space-x-2">
                 <Image
-                  src={Support}
+                  src= "https://res.cloudinary.com/ecosheane/image/upload/v1744531865/chat_tyarcx.png"
                   alt="Support"
                   width={20}
                   height={20}
@@ -194,7 +191,7 @@ const Footer: React.FC = () => {
             <div className="flex justify-center">
               <Link href="/">
                 <Image
-                  src={Logo}
+                  src="https://res.cloudinary.com/ecosheane/image/upload/v1744531882/melanin_cbyyuk.png"
                   alt="Melanin Connect Logo"
                   width={150}
                   height={40}

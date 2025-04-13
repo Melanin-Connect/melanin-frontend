@@ -1,13 +1,11 @@
 import React from "react";
-import Address from "@/public/assets/address.png";
-import Address1 from "@/public/assets/address (1).png";
 import Image from "next/image";
 
 const Locations = () => (
   <div className="container mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-8">
     <div className="relative group overflow-hidden rounded-lg shadow-lg">
       <Image
-        src={Address1}
+        src="https://res.cloudinary.com/ecosheane/image/upload/v1744531864/address_gtb9mg.png"
         alt="Accra Office"
         className="w-full h-64 object-cover"
       />
@@ -20,7 +18,7 @@ const Locations = () => (
     </div>
     <div className="relative group overflow-hidden rounded-lg shadow-lg">
       <Image
-        src={Address}
+        src="https://res.cloudinary.com/ecosheane/image/upload/v1744531863/address_1_vbxf7f.png"
         alt="Kumasi Office"
         className="w-full h-64 object-cover"
       />

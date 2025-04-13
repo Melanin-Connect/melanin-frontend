@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import img from "@/public/assets/image.png";
+
 
 const Hero: React.FC = () => {
   const items = [
@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
         {/* Image Section */}
         <div className="w-full lg:w-1/3 flex justify-center lg:justify-end mt-6 lg:mt-0">
           <Image
-            src={img}
+            src="https://res.cloudinary.com/ecosheane/image/upload/v1744531876/image_1_kmj0fv.png"
             alt="AI Virtual Assistant"
             className="w-full max-w-xs sm:max-w-sm lg:max-w-md"
           />

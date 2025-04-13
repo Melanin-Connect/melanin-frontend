@@ -1,10 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import Container3 from "@/public/assets/Container (3).png"; // Default image
-import Container4 from "@/public/assets/Container (3).png"; // Example for another image
-import Container5 from "@/public/assets/Container (3).png"; // Example for another image
-import Image, { StaticImageData } from "next/image"; // Import StaticImageData type
-import background from "@/public/assets/Background1.png";
+import Image, { StaticImageData } from "next/image";
+
 
 const SolutionsSection: React.FC = () => {
   // State to track the active tab and its associated image and description
@@ -12,25 +9,25 @@ const SolutionsSection: React.FC = () => {
     "AI-Driven Marketing Strategies"
   );
 
-  // Descriptions and image sources for each tab
+  // Updated type to accept either StaticImageData or string
   const solutions: Record<
     string,
-    { description: string; image: StaticImageData }
+    { description: string; image: StaticImageData | string }
   > = {
     "AI-Driven Marketing Strategies": {
       description:
         "Harness the power of artificial intelligence to craft data-driven marketing strategies that are tailored to your business goals and audience.",
-      image: Container3, // Image for this tab
+      image: "https://res.cloudinary.com/ecosheane/image/upload/v1744531865/Container_3_jinzjx.png"
     },
     "Content Generation & SEO Services": {
       description:
         "Leverage AI to create high-quality content and enhance your SEO efforts, improving your online visibility and driving organic traffic.",
-      image: Container4, // Image for this tab
+      image: "https://res.cloudinary.com/ecosheane/image/upload/v1744531865/Container_3_jinzjx.png"
     },
     "Blockchain-Based Payment & Transaction Solutions": {
       description:
         "Implement secure and transparent blockchain-based solutions for payments and transactions, ensuring efficiency and trust in your financial processes.",
-      image: Container5, // Image for this tab
+      image: "https://res.cloudinary.com/ecosheane/image/upload/v1744531865/Container_3_jinzjx.png"
     },
   };
 
@@ -90,8 +87,10 @@ const SolutionsSection: React.FC = () => {
           <div className="flex flex-col justify-center">
             <div className="w-12 h-12 md:w-16 md:h-16 flex justify-center items-center bg-orange-100 rounded-full mb-6">
               <Image
-                src={background}
+                src="https://res.cloudinary.com/ecosheane/image/upload/v1744531862/Background1_xgk3u1.png"
                 alt="background icon"
+                height={40}
+                width={40}
                 className="w-8 h-8 md:w-12 md:h-12"
               />
             </div>
@@ -107,8 +106,10 @@ const SolutionsSection: React.FC = () => {
           <div className="flex justify-center">
             <div className="w-full h-full max-w-md md:max-w-lg overflow-hidden rounded-xl shadow-lg">
               <Image
-                src={solutions[activeTab].image} // Now using StaticImageData type
+                src={solutions[activeTab].image}
                 alt={activeTab}
+                width={500}
+                height={300}
                 className="object-cover w-full h-full"
               />
             </div>

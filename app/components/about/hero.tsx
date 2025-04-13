@@ -1,8 +1,5 @@
 import React from "react";
-import Container3 from "@/public/assets/int.png";
-import Video from "@/public/assets/video.png";
 import Image from "next/image";
-import img1 from "@/public/assets/Background1.png";
 
 const SolutionsSection: React.FC = () => {
   return (
@@ -13,7 +10,7 @@ const SolutionsSection: React.FC = () => {
           <div className="w-full md:w-1/2 mb-8 md:mb-0 pr-0 md:pr-4">
             <div className="h-auto w-full rounded-lg bg-gradient-to-r from-orange-500 to-red-500">
               <Image
-                src={Container3}
+                src="https://res.cloudinary.com/ecosheane/image/upload/v1744531880/int_g6pvdi.png"
                 alt="Icon"
                 height={658}
                 width={589}
@@ -30,7 +27,7 @@ const SolutionsSection: React.FC = () => {
               <div className="flex items-start">
                 <div>
                   <Image
-                    src={img1}
+                    src="https://res.cloudinary.com/ecosheane/image/upload/v1744531861/Background_1_ywleg9.png"
                     alt="Icon"
                     width={60}
                     height={60}
@@ -50,7 +47,7 @@ const SolutionsSection: React.FC = () => {
               <div className="flex items-start">
                 <div>
                   <Image
-                    src={img1}
+                    src="https://res.cloudinary.com/ecosheane/image/upload/v1744531862/Background1_xgk3u1.png"
                     alt="Icon"
                     width={60}
                     height={60}
@@ -73,7 +70,9 @@ const SolutionsSection: React.FC = () => {
             <div className="mt-8">
               <div className="rounded-xl overflow-hidden">
                 <Image
-                  src={Video}
+                  src="https://res.cloudinary.com/ecosheane/image/upload/v1744531894/video_dwrn2p.png"
+                 width={200}
+                 height={100}
                   alt="AI Marketing Strategies"
                   className="object-cover w-full h-auto"
                 />

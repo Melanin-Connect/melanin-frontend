@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Search from '@/public/assets/search.png';
-// import Call from '@/public/assets/call.png';
+
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -18,7 +17,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
           {/* Search Input */}
           <div className="flex items-center bg-orange-100 rounded-full p-2 w-full">
             <Image
-              src={Search}
+              src="https://res.cloudinary.com/ecosheane/image/upload/v1744531886/search_m1luck.png"
               alt="search"
               width={20}
               height={20}

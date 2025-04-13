@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import BreadcrumbBg from "@/public/assets/Breadcrumb.png"
 
 interface BreadcrumbProps {
   title: string;
@@ -10,7 +9,7 @@ const Breadcrumb = ({ title }: BreadcrumbProps) => {
   return (
     <div className="relative  h-[300px] bg-cover bg-center">
       <Image 
-        src={BreadcrumbBg} 
+        src="https://res.cloudinary.com/ecosheane/image/upload/v1744531864/Breadcrumb_l7lths.png"
         alt="Breadcrumb Background" 
         layout="fill" 
         objectFit="cover" 

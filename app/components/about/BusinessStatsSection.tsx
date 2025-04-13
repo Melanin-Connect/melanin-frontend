@@ -1,18 +1,17 @@
 import React from "react";
 import Image from "next/image";
 
-import business from "@/public/assets/business.png.png";
-import gradient from "@/public/assets/gradient.png";
-
 const BusinessStatsSection: React.FC = () => {
   return (
     <section className="relative bg-white py-16 overflow-hidden">
       {/* Gradient Background on the Right Half */}
       <div className="absolute inset-y-0 right-0 w-1/2 hidden lg:block">
         <Image
-          src={gradient}
+          src="https://res.cloudinary.com/ecosheane/image/upload/v1744531871/gradient_w5mwfr.png"
           alt="Gradient Background"
           layout=""
+          width={700}
+          height={700}
           objectFit="cover"
           className="z-0"
         />
@@ -68,9 +67,10 @@ const BusinessStatsSection: React.FC = () => {
           {/* Right Section */}
           <div className="lg:w-1/2  mt-40 lg:mt-0 relative">
             <Image
-              src={business}
+              src= "https://res.cloudinary.com/ecosheane/image/upload/v1744531864/business.png_pgfyaf.png"
               alt="Business Stats"
               width={670}
+            height={600}
               className="w-[670px]  relative z-10"
             />
           </div>

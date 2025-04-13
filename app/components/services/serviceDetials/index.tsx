@@ -4,7 +4,6 @@ import Services from "./Services";
 import Benefits from "./Benefits";
 import Contact from "./contact";
 import Image from "next/image";
-import hero from "@/public/assets/image (1).png";
 import ChatbotSatisfaction from "./chatbot";
 
 const Home: React.FC = () => {
@@ -15,7 +14,7 @@ const Home: React.FC = () => {
         {/* Responsive Image */}
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
           <Image
-            src={hero}
+            src="https://res.cloudinary.com/ecosheane/image/upload/v1744531876/image_1_kmj0fv.png"
             alt="heroimage"
             width={960}
             height={540}

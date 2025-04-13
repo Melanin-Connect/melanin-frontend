@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ChatIcon from "@/public/assets/chat.png";
-import TweetIcon from "@/public/assets/twitte outline.png";
-import EmailIcon from "@/public/assets/envelope.png";
+
 
 const HelpContact: React.FC = () => {
   return (
@@ -11,7 +9,7 @@ const HelpContact: React.FC = () => {
       <ul className="space-y-2 text-sm">
         <li className="flex items-center">
           <Image
-            src={ChatIcon}
+            src="https://res.cloudinary.com/ecosheane/image/upload/v1744531865/chat_tyarcx.png"
             alt="Chat Icon"
             width={24}
             height={24}
@@ -23,7 +21,7 @@ const HelpContact: React.FC = () => {
         <li className="flex items-center">
           <div className="text-orange-500">
             <Image
-              src={TweetIcon}
+              src="https://res.cloudinary.com/ecosheane/image/upload/v1744531893/twitte_outline_e2t1on.png"
               alt="Tweet Icon"
               width={24}
               height={24}
@@ -36,7 +34,7 @@ const HelpContact: React.FC = () => {
 
         <li className="flex items-center">
           <Image
-            src={EmailIcon}
+            src="https://res.cloudinary.com/ecosheane/image/upload/v1744531870/envelope_ski8ed.png"
             alt="Email Icon"
             width={24}
             height={24}

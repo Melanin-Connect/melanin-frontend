@@ -1,7 +1,6 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import img from '@/public/assets/test.png';
 
 const testimonials = [
   {
@@ -63,27 +62,27 @@ const TestimonialSection: React.FC = () => {
           {/* Floating Avatars */}
           <div className="absolute hidden lg:block -top-10 left-8 lg:left-16">
             <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-              <Image src={img} alt="Avatar 1  " />
+              <Image src= "https://res.cloudinary.com/ecosheane/image/upload/v1744531888/test_gw3plk.png" width={20} height={20} alt="Avatar 1  " />
             </div>
           </div>
           <div className="absolute hidden lg:block -top-6 right-8 lg:right-16">
             <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-              <Image src={img} alt="Avatar 2  " />
+              <Image src= "https://res.cloudinary.com/ecosheane/image/upload/v1744531888/test_gw3plk.png" width={20} height={20} alt="Avatar 2  " />
             </div>
           </div>
           <div className="absolute hidden lg:block -bottom-8 left-5 lg:left-12">
             <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-              <Image src={img} alt="Avatar 3  " />
+              <Image src= "https://res.cloudinary.com/ecosheane/image/upload/v1744531888/test_gw3plk.png" width={20} height={20} alt="Avatar 3  " />
             </div>
           </div>
           {/* <div className="absolute hidden lg:block bottom-36 -left-20 lg:left-16">
             <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-              <Image src={img} alt="Avatar 3  " />
+              <Image src= "https://res.cloudinary.com/ecosheane/image/upload/v1744531888/test_gw3plk.png" width={20} height={20} alt="Avatar 3  " />
             </div>
           </div> */}
           <div className="absolute hidden lg:block -bottom-4 right-5 lg:right-16">
             <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-              <Image src={img} alt="Avatar 4  " />
+              <Image src= "https://res.cloudinary.com/ecosheane/image/upload/v1744531888/test_gw3plk.png" width={20} height={20} alt="Avatar 4  " />
             </div>
           </div>
         </div>

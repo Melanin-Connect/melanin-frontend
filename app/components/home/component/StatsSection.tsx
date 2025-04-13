@@ -1,14 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import SVG from "@/public/assets/SVG.png";
-import SVG1 from "@/public/assets/SVG (1).png";
-import SVG2 from "@/public/assets/SVG (2).png";
-import Man from "@/public/assets/mate3.jpg";
-import heading from "@/public/assets/heading.png";
-import SVG3 from "@/public/assets/Group.png";
-import Buttet from "@/public/assets/bullet.png";
-import Video from "@/public/assets/video-1.jpg.png";
-// import play from "@/public/assets/Background.png";
+;
 
 const StatsSection: React.FC = () => {
   return (
@@ -16,7 +8,7 @@ const StatsSection: React.FC = () => {
       {/* Header Section */}
       <div className="text-center mb-8 md:mb-12">
         <Image
-          src={heading}
+          src="https://res.cloudinary.com/ecosheane/image/upload/v1744531873/heading_xfhov1.png"
           width={40}
           height={78}
           alt="Heading Icon"
@@ -27,10 +19,10 @@ const StatsSection: React.FC = () => {
         </h1>
         <p className="mt-2 md:mt-4 w-full text-gray-800 font-semibold text-lg md:text-[24] lg:text-[30] font-epilogue">
           Partner with us to unlock innovative digital solutions, data-driven
-          insights, and 
-          <br/> cutting-edge tools that will help your business thrive
-          in today’s competitive 
-          <br/>
+          insights, and
+          <br /> cutting-edge tools that will help your business thrive in
+          today’s competitive
+          <br />
           landscape
         </p>
       </div>
@@ -54,7 +46,7 @@ const StatsSection: React.FC = () => {
             ].map((text, idx) => (
               <li key={idx} className="flex items-center text-gray-600">
                 <Image
-                  src={Buttet}
+                  src="https://res.cloudinary.com/ecosheane/image/upload/v1744531864/bullet_y3jtuf.png"
                   width={10}
                   height={10}
                   alt="CEO"
@@ -67,7 +59,7 @@ const StatsSection: React.FC = () => {
 
           <div className="flex items-center mt-4 md:mt-6">
             <Image
-              src={Man}
+              src="https://res.cloudinary.com/ecosheane/image/upload/v1744531881/mate3_rkwrhq.jpg"
               width={40}
               height={40}
               alt="CEO"
@@ -77,7 +69,6 @@ const StatsSection: React.FC = () => {
               <p className="text-gray-900 font-semibold">CEO & Founder</p>
               <p className="text-gray-500">Edward Owusu </p>
             </div>
-          
           </div>
         </div>
 
@@ -85,8 +76,16 @@ const StatsSection: React.FC = () => {
           <div className="flex flex-col md:flex-row w-full gap-4 h-auto">
             <div className="flex flex-col gap-4 transform pt-4 md:pt-10 w-full md:w-1/2">
               {[
-                { img: SVG2, value: "280k", label: "Projects Launched" },
-                { img: SVG3, value: "80%", label: "Active Engagement" },
+                {
+                  img: "https://res.cloudinary.com/ecosheane/image/upload/v1744531887/SVG_oixxag.png",
+                  value: "280k",
+                  label: "Projects Launched",
+                },
+                {
+                  img: "https://res.cloudinary.com/ecosheane/image/upload/v1744531887/SVG_2_j3e9i9.png",
+                  value: "80%",
+                  label: "Active Engagement",
+                },
               ].map((card, idx) => (
                 <div
                   key={idx}
@@ -109,8 +108,16 @@ const StatsSection: React.FC = () => {
             {/* Second Column */}
             <div className="flex flex-col gap-4 transform w-full md:w-1/2">
               {[
-                { img: SVG, value: "360+", label: "Satisfied Clients" },
-                { img: SVG1, value: "14+", label: "Awards Winning" },
+                {
+                  img: "https://res.cloudinary.com/ecosheane/image/upload/v1744531887/SVG_oixxag.png",
+                  value: "360+",
+                  label: "Satisfied Clients",
+                },
+                {
+                  img: "https://res.cloudinary.com/ecosheane/image/upload/v1744531887/SVG_1_qao7eg.png",
+                  value: "14+",
+                  label: "Awards Winning",
+                },
               ].map((card, idx) => (
                 <div
                   key={idx}
@@ -143,7 +150,7 @@ const StatsSection: React.FC = () => {
         >
           <div className="flex justify-center mt-2 rounded-lg absolute top-0 left-0 w-full h-auto items-center">
             <Image
-              src={Video}
+              src="https://res.cloudinary.com/ecosheane/image/upload/v1744531894/video-1.jpg_xtcpz2.png"
               width={1201}
               height={350}
               alt="Professional Video"

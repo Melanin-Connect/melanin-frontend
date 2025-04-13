@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import ContactUs from "@/public/assets/contact us.png";
 import Link from "next/link";
 
 const Contact: React.FC = () => {
@@ -8,7 +7,7 @@ const Contact: React.FC = () => {
     <div className="relative w-full h-[463px] bg-black flex items-center justify-center rounded-2xl overflow-hidden p-6">
       {/* Background Image */}
       <Image
-        src={ContactUs}
+        src="https://res.cloudinary.com/ecosheane/image/upload/v1744531865/contact_us_atrl0r.png"
         alt="Contact Background"
         layout="fill"
         objectFit="cover"
