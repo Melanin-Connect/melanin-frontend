@@ -37,7 +37,6 @@ const LogoSection: React.FC = () => {
         let newPosition = prevPosition - speed * (elapsed / 16); // Normalize by 16ms (60fps)
         
         // Reset position when the first set of logos moves out of view
-        const containerWidth = carousel.offsetWidth;
         const contentWidth = (logos.length * 180); // approximate width of one set of logos
         
         if (Math.abs(newPosition) >= contentWidth) {
