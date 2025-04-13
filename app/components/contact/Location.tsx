@@ -7,6 +7,8 @@ const Locations = () => (
       <Image
         src="https://res.cloudinary.com/ecosheane/image/upload/v1744531864/address_gtb9mg.png"
         alt="Accra Office"
+        width={200}
+        height={200}
         className="w-full h-64 object-cover"
       />
 
@@ -20,6 +22,8 @@ const Locations = () => (
       <Image
         src="https://res.cloudinary.com/ecosheane/image/upload/v1744531863/address_1_vbxf7f.png"
         alt="Kumasi Office"
+        width={200}
+        height={200}
         className="w-full h-64 object-cover"
       />
       <div className="absolute inset-0 flex ml-10 mt-40 items-start justify-start flex-col">
