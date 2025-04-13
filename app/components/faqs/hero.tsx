@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import FAQ from "@/public/assets/FAQ.png"
 
 const hero: React.FC = () => {
   return (
