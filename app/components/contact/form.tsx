@@ -1,143 +1,140 @@
 'use client'
-import React, { useState } from "react";
+import { useState, FormEvent } from 'react';
 
-type FormData = {
+interface FormData {
   name: string;
   email: string;
+  phone: string;
   subject: string;
   message: string;
-};
+}
 
 const ContactForm = () => {
-  // Form state
   const [formData, setFormData] = useState<FormData>({
-    name: "",
-    email: "",
-    subject: "",
-    message: ""
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
   });
-
-  // Form submission state
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    success?: boolean;
+    message?: string;
+  }>({});
 
-  // Handle input changes
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  // Handle form submission
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    // Simulate form submission
-    setTimeout(() => {
-      console.log("Form submitted with data:", formData);
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-
-      // Reset form after submission
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: ""
+    setSubmitStatus({});
+    
+    try {
+      const response = await fetch('/api', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setIsSubmitted(false);
-      }, 5000);
-    }, 1000);
+      
+      const data = await response.json();
+      
+      if (response.ok) {
+        setSubmitStatus({
+          success: true,
+          message: 'Message sent successfully! We will get back to you soon.'
+        });
+        // Reset form data
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        });
+      } else {
+        setSubmitStatus({
+          success: false,
+          message: data.message || 'Failed to send message. Please try again.'
+        });
+      }
+    } catch (error) {
+      setSubmitStatus({
+        success: false,
+        message: 'An error occurred. Please try again later.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-6 text-gray-800">Get in Touch</h2>
-
-      {isSubmitted && (
-        <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
-          Thank you for your message! We&apos;ll get back to you soon.
+    <div className="bg-white p-8 rounded-lg">
+      <h3 className="text-2xl font-bold text-[#1F244C] mb-6">Send a Message</h3>
+      
+      {submitStatus.message && (
+        <div className={`p-4 mb-4 rounded-lg ${submitStatus.success ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
+          {submitStatus.message}
         </div>
       )}
-
-      <form onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
-            Your Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="John Doe"
-          />
-        </div>
-
-        <div className="mb-4">
-          <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
-            Email Address
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="john@example.com"
-          />
-        </div>
-
-        <div className="mb-4">
-          <label htmlFor="subject" className="block text-gray-700 font-medium mb-2">
-            Subject
-          </label>
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            value={formData.subject}
-            onChange={handleChange}
-            required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="How can we help you?"
-          />
-        </div>
-
-        <div className="mb-6">
-          <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
-            Your Message
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Please describe how we can help you..."
-          ></textarea>
-        </div>
-
+      
+      <form className="space-y-4" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+        />
+        <input
+          type="text"
+          name="phone"
+          placeholder="Phone Number"
+          value={formData.phone}
+          onChange={handleChange}
+          required
+          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+        />
+        <input
+          type="text"
+          name="subject"
+          placeholder="Subject (Optional)"
+          value={formData.subject}
+          onChange={handleChange}
+          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+        />
+        <textarea
+          name="message"
+          placeholder="Here go your message"
+          value={formData.message}
+          onChange={handleChange}
+          required
+          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+          rows={5}
+        ></textarea>
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`w-full py-2 px-4 rounded-md text-white font-medium ${
-            isSubmitting ? "bg-blue-400" : "bg-blue-600 hover:bg-blue-700"
-          } transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2`}
+          className="w-full py-3 bg-orange-500 text-white font-bold rounded-3xl hover:bg-orange-600 transition duration-300 disabled:bg-orange-300"
         >
-          {isSubmitting ? "Sending..." : "Send Message"}
+          {isSubmitting ? 'Sending...' : 'Send Message'}
         </button>
       </form>
     </div>
