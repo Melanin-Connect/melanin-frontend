@@ -1,26 +1,27 @@
+'use client'
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const BusinessStatsSection: React.FC = () => {
   return (
     <section className="relative bg-white py-16 overflow-hidden">
       {/* Gradient Background on the Right Half */}
-      <div className="absolute inset-y-0 right-0 w-1/2 hidden lg:block">
-        <Image
-          src="https://res.cloudinary.com/ecosheane/image/upload/v1744531871/gradient_w5mwfr.png"
-          alt="Gradient Background"
-          layout=""
-          width={700}
-          height={700}
-          objectFit="cover"
-          className="z-0"
-        />
-      </div>
+      <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className="hidden md:block absolute top-20 right-0 w-1/4 h-[400px] z-0 overflow-visible"
+          >
+            <div className="absolute top-0 right-0 w-[200%] h-full bg-gradient-to-r from-[#c94117] via-[#e44d1a] to-[#f05e2c] rounded-l-full animate-pulse-slow"></div>
+          </motion.div>
 
-      <div className="relative container mx-auto px-4 lg:px-12 z-10">
+      <div className="relative container  mx-auto px-4 lg:px-12 z-10">
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
           {/* Left Section */}
-          <div>
+          <div className=" lg:ml-20 px-4 sm:px-6 lg:px-8 py-12">
+            
             <h2 className="text-[#1F244C] text-3xl lg:text-4xl font-bold mb-6">
               We’re Here To Do Better Business.
             </h2>

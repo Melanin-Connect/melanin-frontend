@@ -13,6 +13,7 @@ const FAQSection: React.FC = () => {
 
   return (
     <section className="relative bg-white py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Top Text Section */}
       <div className="container mx-auto px-4 md:px-8 lg:px-12">
         <div className="flex flex-col md:flex-row justify-between mb-12">
@@ -121,6 +122,7 @@ const FAQSection: React.FC = () => {
             ))}
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

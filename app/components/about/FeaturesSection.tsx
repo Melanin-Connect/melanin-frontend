@@ -4,6 +4,8 @@ import Image from "next/image";
 const FeaturesSection: React.FC = () => {
   return (
     <section className="container bg-white mx-auto px-4 lg:px-12 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      
       {/* Heading Section */}
       <div className="text-center mb-8 md:mb-12">
         <Image
@@ -101,6 +103,7 @@ const FeaturesSection: React.FC = () => {
             that ensures fast, reliable, and transparent payments worldwide.
           </p>
         </div>
+      </div>
       </div>
     </section>
   );

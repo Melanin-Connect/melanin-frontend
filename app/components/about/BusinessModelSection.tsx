@@ -2,6 +2,7 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <div className="bg-white container mx-auto px-6 sm:px-10 lg:px-20 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       {/* Left - Heading Section */}
       <div className="text-center md:text-left">
@@ -27,6 +28,7 @@ const Hero: React.FC = () => {
           digital reach, and foster genuine connections.
         </p>
       </div>
+    </div>
     </div>
   );
 };

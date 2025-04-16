@@ -4,6 +4,7 @@ import Image from "next/image";
 const stat = () => {
   return (
     <div className="flex items-center bg-white h-[500px] relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <div className="flex-1 relative w-[298.39px] ">
      
       <Image
@@ -21,6 +22,7 @@ const stat = () => {
    
      
     </div>
+  </div>
   </div>
   )
 }
