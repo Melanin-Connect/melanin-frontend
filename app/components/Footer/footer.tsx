@@ -148,7 +148,7 @@ const Footer: React.FC = () => {
                   className="flex-shrink-0"
                 />
                 <Link
-                  href="mailto:info@melaninconnect.net"
+                  href="mailto:info@melaninconnect.xyz"
                   className="text-lg font-bold text-orange-500 hover:text-orange-400 transition-colors"
                 >
                   info@melaninconnect.xyz
