@@ -1,9 +1,16 @@
 'use client'
 import React, { useState } from "react";
 
+type FormData = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};
+
 const ContactForm = () => {
   // Form state
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     subject: "",
@@ -15,7 +22,7 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Handle input changes
-  const handleChange = (e:any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -24,7 +31,7 @@ const ContactForm = () => {
   };
 
   // Handle form submission
-  const handleSubmit = (e: { preventDefault: () => void; }) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -33,7 +40,7 @@ const ContactForm = () => {
       console.log("Form submitted with data:", formData);
       setIsSubmitting(false);
       setIsSubmitted(true);
-      
+
       // Reset form after submission
       setFormData({
         name: "",
@@ -53,11 +60,11 @@ const ContactForm = () => {
     <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-6 text-gray-800">Get in Touch</h2>
 
-      {isSubmitted ? (
+      {isSubmitted && (
         <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
-          Thank you for your message! We'll get back to you soon.
+          Thank you for your message! We&apos;ll get back to you soon.
         </div>
-      ) : null}
+      )}
 
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
