@@ -1,17 +1,12 @@
-"use client"
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import Img from "../../../../public/assets/imgs.png";
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
+
 const HeroSection = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
+ 
   return (
     <section className="relative bg-white overflow-hidden">
       {/* Animated gradient background - hidden on mobile */}
@@ -240,19 +235,6 @@ const HeroSection = () => {
   );
 };
 
-// Add this to your global CSS file
-const globalStyles = `
-@keyframes pulse-slow {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.85;
-  }
-}
-.animate-pulse-slow {
-  animation: pulse-slow 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-`;
+
 
 export default HeroSection;

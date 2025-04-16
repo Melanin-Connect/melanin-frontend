@@ -121,7 +121,7 @@ const StatsSection: React.FC = () => {
             Partner with us to unlock innovative digital solutions, data-driven
             insights, and
             <br className="hidden md:block" /> cutting-edge tools that will help your business thrive in
-            today's competitive
+            today&apos;s competitive
             <br className="hidden md:block" />
             landscape
           </motion.p>
