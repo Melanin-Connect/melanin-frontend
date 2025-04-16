@@ -10,6 +10,7 @@ interface ContactFormState {
   subscribeToNewsletter: boolean;
 }
 
+
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState<ContactFormState>({
     name: '',
@@ -45,7 +46,7 @@ const ContactForm: React.FC = () => {
     setSubmitStatus(null);
 
     try {
-      const result = await sendContactForm(formData);
+      await sendContactForm(formData);
       setSubmitStatus({
         success: true,
         message: 'Thank you for your message! We will get back to you soon.',

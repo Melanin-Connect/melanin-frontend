@@ -8,9 +8,14 @@ interface ContactFormData {
   subscribeToNewsletter: boolean;
 }
 
-export const sendContactForm = async (formData: ContactFormData): Promise<any> => {
+interface ApiResponse {
+  success: boolean;
+  message: string;
+}
+
+export const sendContactForm = async (formData: ContactFormData): Promise<ApiResponse> => {
   try {
-    const response = await axios.post('https://melanin-mail-service.onrender.com/api/contact', formData, {
+    const response = await axios.post<ApiResponse>('https://melanin-mail-service.onrender.com/api/contact', formData, {
       headers: {
         'Content-Type': 'application/json',
       },
