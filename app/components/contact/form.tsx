@@ -1,4 +1,5 @@
 'use client'
+
 import { useState, FormEvent } from 'react';
 
 interface FormData {
@@ -65,6 +66,7 @@ const ContactForm = () => {
         });
       }
     } catch (error) {
+      console.error("Form submission error:", error);
       setSubmitStatus({
         success: false,
         message: 'An error occurred. Please try again later.'
