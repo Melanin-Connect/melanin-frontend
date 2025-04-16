@@ -8,7 +8,7 @@ const ReviewSection: React.FC = () => {
     {
       name: "Thomas Walimes",
       role: "Marketing Manager",
-      text: "Melanin Connect has been an incredible partner to work with. Their team is always quick to respond to our queries and provide proactive solutions. We truly feel that they are an extension of our in-house team, and we’re excited about the ongoing partnership and the future we’re building together.",
+      text: "Melanin Connect has been an incredible partner to work with. Their team is always quick to respond to our queries and provide proactive solutions. We truly feel that they are an extension of our in-house team, and we're excited about the ongoing partnership and the future we're building together.",
       stars: 5,
     },
     {
@@ -39,21 +39,18 @@ const ReviewSection: React.FC = () => {
   const avatar4 ="https://res.cloudinary.com/ecosheane/image/upload/v1744531862/avatar_gsyofl.png";
 
   return (
-    <div className="flex flex-col lg:flex-row items-center bg-white h-auto lg:h-[500px] relative">
-      {/* Left Section with Gradient and Avatars */}
+    <div className="flex flex-col lg:flex-row items-center bg-white h-auto lg:h-[500px] ">
+      {/* Left Section with New Background Style */}
       <div className="flex-1 relative w-full lg:w-[298.39px]">
-        {/* Gradient Background */}
-        <Image
-          src="https://res.cloudinary.com/ecosheane/image/upload/v1744531871/Gradient1_nvvuj8.png"
-          alt="gradient"
-          layout="fill"
-          objectFit="cover"
-          className="absolute inset-0"
-        />
+        
+        {/* New background style that extends endlessly to the left with rounded edges on right */}
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-orange-600 rounded-full -left-full right-0" style={{ width: '200%' }}></div>
+        
         {/* Content */}
-        <div className="relative z-10 p-6 lg:p-12">
+        <div className="max-w-lg  mx-auto px-4 sm:px-6 lg:px-8 py-8  relative z-10">
+          <div className="lg:ml-36">
           <h6 className="uppercase text-xs lg:text-sm font-semibold tracking-widest text-white mb-2 lg:mb-4">
-            Client’s Reviews
+            Client's Reviews
           </h6>
           <h2 className="text-xl lg:text-3xl font-bold text-white leading-snug mb-4 lg:mb-6">
             What Our Clients are <br /> Saying About Us
@@ -73,6 +70,7 @@ const ReviewSection: React.FC = () => {
                 onClick={() => setSelectedReview(index)}
               />
             ))}
+          </div>
           </div>
         </div>
       </div>
